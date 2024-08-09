@@ -1,0 +1,143 @@
+
+
+.divisions-row {
+    min-height: 80vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+
+.divisions-row-buffer {
+    min-height: 10vh;
+}
+
+.cell-1 {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0px, 30px);
+}
+
+.cell-1-content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cell-1 img {
+    padding: 10px;
+    margin: 20px;
+    max-width: 60px;
+}
+
+.cell-1 h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 450;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.cell-1 p {
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.cell-1 a {
+    text-decoration: none;
+}
+
+.cell-1 button {
+    background-color: rgb(153, 163, 255);
+    border: 3px solid rgb(153, 163, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    transition: all 0.2s ease-in;
+    font-weight: 600;
+}
+
+.cell-1 button:hover {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(153, 163, 255);
+    color: rgb(153, 163, 255);
+    border-radius: 0px;
+}
+
+
+.divisions-row.industry .cell-1 img {
+    max-width: 35px;
+    border: 3px solid black;
+    border-radius: 25%;
+    padding: 3px;
+}
+
+.divisions-row.green-cleaning .cell-1 img {
+    max-width: 35px;
+}
+
+.divisions-row .brewery-list img {
+    max-width: 40px;
+}
+
+.divisions-row .safety img {
+    max-width: 55px;
+}
+
+.divisions-row.contact .cell-1 img {
+    max-width: 50px;
+}
+
+.cell-2 {
+    width: 50%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell-2-content-box img {
+    max-height: 70vh;
+    border-radius: 15px;
+}
+
+.cell-2-content-box {
+    position: relative;
+}
+
+.cell-2-content-box .border-box {
+    width: 100%;
+    height: 95%;
+    border: 3px solid rgb(145, 156, 255);
+    border-radius: 15px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* .cell-2-content-box .border-box:nth-child(odd) {
+transform: translate(-25px, 60px);
+} */
+
+.cell-2-content-box .border-box:nth-child(odd) {
+    transform: translate(30px, 60px);
+}

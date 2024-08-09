@@ -1,0 +1,356 @@
+/* .new-section-2-solutions {
+  min-height: 170vh;
+  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    to left,
+    rgba(202, 255, 167, 0.151),
+    rgba(184, 184, 255, 0.224)
+  );
+  color: black;
+  color: rgb(45, 45, 45);
+
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+} */
+
+/*  ----------CHANGED FOR SHORTER WEBSITE------------- */
+.new-section-2-solutions {
+  min-height: 150vh;
+  background-color: rgb(255, 255, 255);
+  /* background-image: linear-gradient(
+    to left,
+    rgba(202, 255, 167, 0.151),
+    rgba(184, 184, 255, 0.224)
+  ); */
+  color: black;
+  color: rgb(45, 45, 45);
+
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+
+.solutions-introduction {
+  padding: 20px;
+}
+
+.intro.new-solutions-title {
+  font-size: 35px;
+  color: rgb(45, 45, 45);
+}
+
+.solutions-intro-background {
+  /* background: linear-gradient(
+    to left,
+    rgba(181, 231, 147, 0.151),
+    rgba(159, 159, 254, 0.224)
+  ); */
+  padding: 10px;
+  padding-bottom: 20px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.solutions-intro-content {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 40px;
+  margin-bottom: 0px;
+  padding: auto;
+}
+
+.solutions-intro-title {
+  max-height: 200px;
+  font-size: 50px;
+  margin-top: 20px;
+  font-weight: 450;
+  padding: 10px;
+  padding-left: 60px;
+  /* background-color: aqua; */
+}
+
+.solutions-intro-title span {
+  color: rgb(153, 163, 255);
+  font-weight: bold;
+}
+
+.solutions-intro-text {
+  font-size: 22px;
+  font-weight: 300;
+  padding: 30px;
+  padding-top: 40px;
+  margin-right: 40px;
+  max-height: 200px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+}
+
+.solutions-intro-text span {
+  color: rgb(153, 163, 255);
+  font-weight: bold;
+}
+
+.intro-sub-title {
+  color: rgb(153, 163, 255);
+  font-weight: 400 !important;
+}
+
+/* ---------DIVISION 2---------- */
+.new-solutions-title {
+  font-size: 30px;
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-weight: 350;
+  letter-spacing: 1px;
+  color: rgb(45, 45, 45);
+}
+
+.solutions-background-margin {
+  background-color: rgba(157, 164, 255, 0.416);
+}
+
+.solutions-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 80px; */
+  margin-top: 0px;
+  transition: margin 0.2s ease-in;
+}
+
+.solutions-cards {
+  flex: 0.4;
+  height: 480px;
+  cursor: pointer;
+  position: relative;
+  /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.406); */
+  text-align: center;
+  transition: flex-grow 1s ease-out;
+  border: 1px solid rgba(230, 232, 255, 0.9);
+  display: flex;
+}
+
+/* .solutions-cards-container:hover {
+  margin-left: 0;
+  margin-right: 0;
+} */
+
+.solutions-cards:hover {
+  flex: 4;
+}
+
+.card-1 {
+  background: url(assets/picture-backgrounds/Food-Service.png);
+  background-size: cover;
+  /* background-position: top; */
+}
+
+.card-2 {
+  background: url(assets/picture-backgrounds/janitorial-equipment.png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.card-3 {
+  background: url(assets/picture-backgrounds/Equipment.png);
+  background-size: cover;
+  /* background-position: top; */
+
+}
+
+.card-4 {
+  background: url(assets/picture-backgrounds/Personal-Protective.png);
+  background-size: cover;
+  /* background-position: top; */
+
+}
+
+.card-5 {
+  background: url(assets/picture-backgrounds/fish-meat.png);
+  background-size: cover;
+  /* background-position: top; */
+
+}
+
+.card-6 {
+  background: url(assets/picture-backgrounds/Water-treatment.jpg);
+  background-size: cover;
+  /* background-position: top; */
+
+}
+
+.solutions-background {
+  position: relative;
+  text-align: center;
+  align-content: end;
+  justify-content: end;
+  min-height: 40%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.solutions-background h1{
+  /* background-color: rgba(12, 5, 56, 0.142); */
+}
+/* 
+.solutions-background:hover {
+  background-color: rgba(0, 0, 0, 0);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.new-solutions-text {
+  color: white;      
+
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.solutions-background div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.solutions-background a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  font-weight: 900;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: rgba(44, 39, 48, 0.587);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  transition: all 0.1s ease-in;
+}
+
+.solutions-background a:hover {
+  border: 2px solid rgb(176, 185, 255);
+  background-color: rgb(176, 185, 255);
+}
+
+.arrow-right {
+  border: solid rgb(255, 255, 255, .85);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+/* New section-2 styling */
+/* -------- Section-2 Styling ----------------*/
+.section-2-solutions {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+
+.solutions-title {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 350;
+  letter-spacing: 1.5px;
+}
+
+.solutions-list {
+  margin-top: 40px;
+  display: flex;
+  min-width: 90%;
+  justify-content: space-around;
+}
+
+.solutions-list > div {
+  min-width: 200px;
+  max-width: 200px;
+  padding: 20px;
+  letter-spacing: 1px;
+  margin: 5px;
+  /* border: 1px solid rgb(53, 48, 48); */
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+.solutions-list > div:hover {
+  /* background-color: rgba(0, 51, 255, 0.185); */
+  /* border: 1px solid rgba(0, 51, 255, 0.427); */
+  /* background: radial-gradient(
+    rgba(7, 0, 39, 0.084),
+    rgba(141, 160, 237, 0.463)
+  ); */
+  margin: 5px;
+}
+
+.solutions-list-img {
+  min-height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-width: 80px;
+}
+
+.image.img-1 {
+  height: 120px;
+  min-width: 140px;
+  max-height: 150px;
+}
+
+.image.img-2 {
+  max-height: 150px;
+  max-width: 90px;
+}
+
+.image.img-3 {
+  max-height: 150px;
+  min-width: 120px;
+}
+
+.image.img-4 {
+  min-height: 120px;
+  min-width: 130px;
+}
+
+.solutions-text {
+  margin-top: 30px;
+}

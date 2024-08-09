@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Raleway";
+  /* src: url("../Allura,Raleway/Raleway/Raleway-VariableFont_wght.ttf") format("truetype"); */
+  src: url("../../Allura,Raleway/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Allura";
+    src: url("../../Allura,Raleway/Allura/Allura-Regular.ttf") format("truetype");
+}
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.allura-regular {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+

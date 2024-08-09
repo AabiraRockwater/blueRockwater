@@ -1,0 +1,33 @@
+.scroll-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1000;
+}
+
+.scroll-container:before {
+    content: "";
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.scroll-container a {
+    position: sticky;
+    top: 95vh;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.scroll-container img {
+    max-width: 50px;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+}
+
+.scroll-container img:hover {
+    background-color: rgb(231, 255, 210);
+}

@@ -1,0 +1,68 @@
+.buffer-section {
+    min-height: 10vh;
+    /* background-color: rgb(255, 255, 255); */
+    z-index: 1;
+    position: relative;
+    /* background: linear-gradient(white, rgb(0, 0, 0)); */
+  }
+  
+
+
+.buffer-section-picture {
+  min-height: 50vh;
+  background-image: url(assets/picture-backgrounds/group-picture.png);
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;
+  margin: 0;
+}
+
+.buffer-section-picture div{
+  min-height: 50vh;
+  min-width: 100%;
+  margin: 0;
+  background: linear-gradient(rgba(14, 3, 57, 0.15), rgba(57, 3, 3, 0.15));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  ------------------- logo ------------------- */
+.intro-logo {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.815));
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-logo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: transparent;
+}
+.intro-logo-img {
+  max-height: 200px;
+}
+.intro-logo-slogan {
+  width: auto;
+  font-size: 33px;
+  letter-spacing: 3px;
+  margin-top: 15px;
+  color: rgba(224, 224, 224, 0.865);
+  padding: 0;
+  padding-top: 20px;
+}
+/*  ------------------- logo ------------------- */
+
+
+
+/*  ------------ Transparent Layer --------------- */
+.transparent-layer {
+  min-height: 80vh;
+  background-color: transparent;
+}
+/*  ------------ Transparent Layer --------------- */
