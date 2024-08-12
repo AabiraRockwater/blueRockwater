@@ -69,6 +69,7 @@ nav {
 @media screen and (max-width: 950px) {
   .navbar-class .icon {
     display: block;
+    background-color: red;
   }
 
   .right-nav {

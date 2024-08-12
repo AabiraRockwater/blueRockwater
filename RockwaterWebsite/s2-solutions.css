@@ -17,13 +17,8 @@
 
 /*  ----------CHANGED FOR SHORTER WEBSITE------------- */
 .new-section-2-solutions {
-  min-height: 150vh;
+  min-height: 130vh;
   background-color: rgb(255, 255, 255);
-  /* background-image: linear-gradient(
-    to left,
-    rgba(202, 255, 167, 0.151),
-    rgba(184, 184, 255, 0.224)
-  ); */
   color: black;
   color: rgb(45, 45, 45);
 
@@ -35,6 +30,7 @@
 
 .solutions-introduction {
   padding: 20px;
+  padding-bottom: 0;
 }
 
 .intro.new-solutions-title {
@@ -43,13 +39,7 @@
 }
 
 .solutions-intro-background {
-  /* background: linear-gradient(
-    to left,
-    rgba(181, 231, 147, 0.151),
-    rgba(159, 159, 254, 0.224)
-  ); */
   padding: 10px;
-  padding-bottom: 20px;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -68,13 +58,12 @@
 }
 
 .solutions-intro-title {
-  max-height: 200px;
+  min-height: 200px;
   font-size: 50px;
   margin-top: 20px;
   font-weight: 450;
   padding: 10px;
   padding-left: 60px;
-  /* background-color: aqua; */
 }
 
 .solutions-intro-title span {
@@ -104,14 +93,13 @@
 }
 
 /* ---------DIVISION 2---------- */
-.new-solutions-title {
+/* .new-solutions-title {
   font-size: 30px;
-  padding-top: 50px;
   text-transform: uppercase;
   font-weight: 350;
   letter-spacing: 1px;
   color: rgb(45, 45, 45);
-}
+} */
 
 .solutions-background-margin {
   background-color: rgba(157, 164, 255, 0.416);
@@ -120,9 +108,8 @@
 .solutions-cards-container {
   display: flex;
   flex-wrap: wrap;
-  /* margin: 80px; */
   margin-top: 0px;
-  transition: margin 0.2s ease-in;
+  /* transition: margin 0.2s ease-in; */
 }
 
 .solutions-cards {
@@ -138,8 +125,7 @@
 }
 
 /* .solutions-cards-container:hover {
-  margin-left: 0;
-  margin-right: 0;
+  margin-inline: 0;
 } */
 
 .solutions-cards:hover {
@@ -353,4 +339,83 @@
 
 .solutions-text {
   margin-top: 30px;
+}
+
+
+
+
+
+/* ---------------------------- Media Queries ---------------------------- */
+
+@media screen and (1600px < width) {
+
+  .solutions-intro-content {
+    padding: 40px;
+    padding-inline: 60px;
+  }
+
+  .solutions-cards-container {
+    margin-top: 30px;
+  }
+
+  .solutions-intro-title {
+    font-size: 55px;
+    padding: 40px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .solutions-intro-text {
+    font-size: 25px;
+    padding: 40px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .solutions-cards {
+    flex: 1;
+    height: 60vh;
+  }
+
+  .solutions-cards:hover {
+    flex: 4;
+  }
+}
+
+
+@media screen and (2000px < width) {
+  .solutions-intro-content {
+    padding: 100px;
+    padding-inline: 200px;
+  }
+
+  .solutions-cards-container {
+    margin-top: 0px;
+  }
+
+  .solutions-intro-title {
+    font-size: 80px;
+    padding: 60px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .solutions-intro-text {
+    font-size: 27px;
+    padding: 40px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .solutions-cards {
+    flex: 0.7;
+  }
+
+  .solutions-cards:hover {
+    flex: 4;
+  }
 }

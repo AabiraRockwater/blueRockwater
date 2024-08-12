@@ -3,10 +3,10 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray("#des-1").forEach((box) => {
   gsap.fromTo(
     box,
-    { x: -15, y: 0, rotation: 0 },
+    { x: -15, y: 50, rotation: 0 },
     {
       x: -10,
-      y: -30,
+      y: 0,
       rotation: 10,
       scrollTrigger: {
         trigger: box.parentElement,
@@ -77,8 +77,8 @@ const tl = gsap.timeline();
 
 tl.fromTo(
   "#des-1",
-  { x: -10, y: -30, rotation: 10 },
-  { x: -15, y: 0, rotation: 0  }
+  { x: -10, y: 20, rotation: 10 },
+  { x: -15, y: 50, rotation: 0  }
 );
 
 // Animation for des-2

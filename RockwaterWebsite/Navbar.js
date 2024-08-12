@@ -35,8 +35,9 @@ window.addEventListener("scroll", function () {
   lastScrollTop = scrollTop;
 });
 
-// -------------  RESPONSIVNESS PART ------------- //
 
+
+/* ---------------------------- Media Queries ---------------------------- */
 
 function myFunction() {
   var x = document.getElementById("navbar");

@@ -59,7 +59,7 @@ header {
   border: 3px solid  rgb(97, 95, 219);
   border-radius: 20px;
   margin: 20px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 15%;
   transition: all 0.3s ease;
 }
@@ -87,16 +87,15 @@ a.learn-more-btn > button {
   right: 0;
   transform: translate(50px,-1px);
   filter: saturate(0.9);
-
   z-index: -1;
 }
 
 #des-1 {
   position: absolute;
   width: 1200px;
-  top: 0;
+  bottom: 0;
   left: 0;
-  transform: translate(0px,-50px);
+  transform: translate(-15px, 50px);
   filter: saturate(0.9);
   z-index: -1;
 }
@@ -118,6 +117,15 @@ a.learn-more-btn > button {
 }
 
 
-/* @media all (300px < width < 800px) {
-  
-} */
+
+
+
+/* ---------------------------- Media Queries ---------------------------- */
+
+
+@media screen and (1400px < width) {
+  #des-2, #des-1 {
+    min-width: 70vw;
+  }
+}
+
