@@ -34,3 +34,15 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = scrollTop;
 });
+
+// -------------  RESPONSIVNESS PART ------------- //
+
+
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar-class") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-class";
+  }
+}
