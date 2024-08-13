@@ -1,13 +1,16 @@
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
+const height = window.innerHeight;
+const width = window.innerWidth;
+
 // Animate .border-box elements
 gsap.utils.toArray(".border-box").forEach((box) => {
   gsap.fromTo(
     box,
-    { y: 80 },
+    { y: 5 * width * 0.01 },
     {
-      y: -70,
+      y: -6 * width * 0.01,
       scrollTrigger: {
         trigger: box.parentElement,
         start: "top bottom-=100px", // Adjust start position
@@ -22,14 +25,14 @@ gsap.utils.toArray(".border-box").forEach((box) => {
 gsap.utils.toArray(".cell-1-icon").forEach((icon) => {
   gsap.fromTo(
     icon,
-    { y: 10 },
+    { y: 30 },
     {
-      y: -90,
+      y: -1.7 * height * 0.1,
       scrollTrigger: {
         trigger: icon.parentElement,
         start: "top bottom",
         end: "bottom top",
-        scrub: 1,
+        scrub: 2,
       },
     }
   );
@@ -39,14 +42,14 @@ gsap.utils.toArray(".cell-1-icon").forEach((icon) => {
 gsap.utils.toArray(".cell-1-content-box h1").forEach((title) => {
   gsap.fromTo(
     title,
-    { y: 10 },
+    { y: 30 },
     {
-      y: -80,
+      y: -1.6 * height * 0.1,
       scrollTrigger: {
         trigger: title.parentElement,
         start: "top bottom",
         end: "bottom top",
-        scrub: 1,
+        scrub: 2,
       },
     }
   );
@@ -56,14 +59,14 @@ gsap.utils.toArray(".cell-1-content-box h1").forEach((title) => {
 gsap.utils.toArray(".cell-1-content-box p").forEach((text) => {
   gsap.fromTo(
     text,
-    { y: 10 },
+    { y: 30 },
     {
-      y: -55,
+      y: -1 * height * 0.1,
       scrollTrigger: {
         trigger: text.parentElement,
         start: "top bottom",
         end: "bottom top",
-        scrub: 1,
+        scrub: 2,
       },
     }
   );

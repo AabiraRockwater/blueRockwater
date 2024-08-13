@@ -59,7 +59,7 @@ header {
   border: 3px solid  rgb(97, 95, 219);
   border-radius: 20px;
   margin: 20px;
-  /* position: absolute; */
+  position: absolute;
   bottom: 15%;
   transition: all 0.3s ease;
 }
@@ -85,8 +85,9 @@ a.learn-more-btn > button {
   width: 1200px;
   top: 0;
   right: 0;
-  transform: translate(50px,-1px);
+  transform: translate(50px,-10px);
   filter: saturate(0.9);
+
   z-index: -1;
 }
 
@@ -95,7 +96,7 @@ a.learn-more-btn > button {
   width: 1200px;
   bottom: 0;
   left: 0;
-  transform: translate(-15px, 50px);
+  transform: translate(-20px, 120px);
   filter: saturate(0.9);
   z-index: -1;
 }
@@ -117,15 +118,104 @@ a.learn-more-btn > button {
 }
 
 
-
-
-
 /* ---------------------------- Media Queries ---------------------------- */
 
-
-@media screen and (1400px < width) {
-  #des-2, #des-1 {
-    min-width: 70vw;
+@media screen and (min-width: 1300px), screen and (min-height: 1000px) {
+  .learn-more-btn {
+    min-width: 14vw;
+    margin: 2vh;
+    position: relative;
+    top: 0;
   }
 }
 
+
+@media screen and (1600px < width) {
+  #des-2, #des-1 {
+    min-width: 80vw;
+  }
+
+  .title-text {
+    font-size: 11vh;
+    padding: 1vh;
+  }
+
+  .subtitile-text {
+    font-size: 4vh;
+    padding: 0.7vh;
+  }
+
+  .sub-2 {
+    font-size: 3.5vh;
+    padding: 0.7vh;
+  }
+
+  a.learn-more-btn > button {
+    font-size: 2vh;
+  }
+  .learn-more-btn {
+    min-width: 13vw;
+    margin: 2vh;
+  }
+}
+
+
+@media screen and (2000px < width) {
+  #des-2, #des-1 {
+    min-width: 70vw;
+  }
+
+  .title-text {
+    font-size: 10vh;
+    padding: 0.8vh;
+  }
+
+  .subtitile-text {
+    font-size: 3.5vh;
+    padding: 0.5vh;
+  }
+
+  .sub-2 {
+    font-size: 3vh;
+    padding: 0.5vh;
+  }
+
+  a.learn-more-btn > button {
+    font-size: 1.5vh;
+  }
+  .learn-more-btn {
+    padding: 2vh;
+    min-width: 10vw;
+    margin: 3vh;
+  }
+}
+
+@media screen and (3000px < width) {
+  #des-2, #des-1 {
+    min-width: 80vw;
+  }
+
+  .title-text {
+    font-size: 10vh;
+    padding: 0.8vh;
+  }
+
+  .subtitile-text {
+    font-size: 3.5vh;
+    padding: 0.5vh;
+  }
+
+  .sub-2 {
+    font-size: 3vh;
+    padding: 0.5vh;
+  }
+
+  a.learn-more-btn > button {
+    font-size: 1.5vh;
+  }
+  .learn-more-btn {
+    padding: 2vh;
+    min-width: 10vw;
+    margin: 3vh;
+  }
+}

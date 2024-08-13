@@ -92,14 +92,7 @@
   font-weight: 400 !important;
 }
 
-/* ---------DIVISION 2---------- */
-/* .new-solutions-title {
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 350;
-  letter-spacing: 1px;
-  color: rgb(45, 45, 45);
-} */
+
 
 .solutions-background-margin {
   background-color: rgba(157, 164, 255, 0.416);
@@ -184,30 +177,9 @@
   padding: 0;
 }
 
-.solutions-background h1{
-  /* background-color: rgba(12, 5, 56, 0.142); */
-}
-/* 
-.solutions-background:hover {
-  background-color: rgba(0, 0, 0, 0);
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .new-solutions-text {
-  color: white;      
+  color: rgb(255, 255, 255);      
 
   text-shadow: 0px 0px 10px rgb(0, 0, 0);
   font-weight: 500;
@@ -376,7 +348,7 @@
 
   .solutions-cards {
     flex: 1;
-    height: 60vh;
+    height: 50vh;
   }
 
   .solutions-cards:hover {
@@ -418,4 +390,50 @@
   .solutions-cards:hover {
     flex: 4;
   }
+
+  .new-solutions-text {
+    font-size: 23px;
+  }
+
+}
+
+
+@media screen and (2500px < width) {
+  
+  .solutions-introduction {
+    padding: 1.56vh;
+    padding-bottom: 0;
+
+  }
+  .solutions-intro-background {
+    padding: 0.78vh;
+    padding-bottom: 0;
+  }
+
+  .solutions-intro-content {
+    margin: 2.5vh;
+    margin-bottom: 0;
+  }
+
+  .solutions-intro-title {
+    min-height: 15.625vh;
+    font-size: 5vh;
+    margin-top: 1.56vh;
+    padding: 0.78vh;
+    padding-left: 5vw;
+    padding-bottom: 0;
+  }
+
+  .solutions-intro-text {
+    font-size: 2vh;
+    padding: 2.344vh;
+    padding-top: 3.125vh;
+    margin-right: 3.125vh;
+    max-height: 15.625vh;
+    padding-bottom: 0;
+  }
+
+  /* .new-solutions-text {
+    font-size: 35px;
+  } */
 }
