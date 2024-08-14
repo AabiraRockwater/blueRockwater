@@ -105,11 +105,9 @@
   .lc-left-div {
     transform: translateX(-50px);
   }
-
 }
 
-
-@media screen and (1400px < width) {
+@media screen and (1280px < width) {
   .section-6-linked-carousels {
     align-items: center;
   }
@@ -117,7 +115,6 @@
   .lc-title {
     font-size: 73px;
   }
-
 
   .lc-right-div {
       float: right;
@@ -129,7 +126,6 @@
 
   .lc-carousel-container {
       margin: 0;
-      /* padding: 10px; */
       min-width: 550px;
       min-height: 550px;
       margin-left: 50px;
@@ -152,13 +148,37 @@
 }
 
 
-@media screen and (1600px < width) {
+@media screen and (1400px < width) {
 
-  .lc-title {
-    font-size: 75px;
+  /* .lc-title {
+    font-size: 73px;
+  } */
+
+  /* .lc-right-div {
+      min-width: 550px;
+      min-height: 550px;
   }
 
-  .lc-right-div {
+  .lc-carousel-container {
+      min-width: 550px;
+      min-height: 550px;
+      border: 15px solid white;
+
+  }
+
+  .section-6-linked-carousels img {
+      max-width: 500px;
+  } */
+}
+
+
+@media screen and (1600px < width) {
+
+  /* .lc-title {
+    font-size: 75px;
+  } */
+
+  /* .lc-right-div {
       min-width: 600px;
       min-height: 600px;
   }
@@ -172,18 +192,18 @@
 
   .section-6-linked-carousels img {
       max-width: 550px;
-  }
+  } */
 }
 
 
 
 @media screen and (1800px < width) {
 
-  .lc-title {
+  /* .lc-title {
     font-size: 77px;
-  }
+  } */
 
-  .lc-nav-text {
+  /* .lc-nav-text {
     font-size: 60px;
   }
 
@@ -209,14 +229,34 @@
 
   .section-6-linked-carousels img {
     max-width: 600px;
-  }
+  } */
 }
 
+@media screen and (2000px < width) {
+
+  /* .lc-title {
+    font-size: 80px;
+  } */
+
+  /* .lc-right-div {
+      min-height: 700px;
+  }
+
+  .lc-carousel-container {
+      min-width: 700px;
+      min-height: 700px;
+      border: 20px solid white;
+  }
+
+  .section-6-linked-carousels img {
+      max-width: 650px;
+  } */
+}
 
 @media screen and (2200px < width) {
 
   .lc-title {
-    font-size: 120px;
+    font-size: 85px;
   }
 
   .lc-right-div {
@@ -233,3 +273,4 @@
       max-width: 750px;
   }
 }
+

@@ -161,8 +161,11 @@ a.learn-more-btn > button {
 
 
 @media screen and (2000px < width) {
-  #des-2, #des-1 {
-    min-width: 70vw;
+  #des-2 {
+    min-width: 90vw;
+  }
+  #des-1 {
+    min-width: 85vw;
   }
 
   .title-text {
@@ -192,7 +195,7 @@ a.learn-more-btn > button {
 
 @media screen and (3000px < width) {
   #des-2, #des-1 {
-    min-width: 80vw;
+    min-width: 100vw;
   }
 
   .title-text {

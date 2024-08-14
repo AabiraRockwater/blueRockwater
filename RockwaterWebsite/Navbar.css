@@ -66,6 +66,14 @@ nav {
   margin: 10px;
 }
 
+
+@media screen and (2000px < width) {
+  nav {
+    font-size: x-large;
+  }
+}
+
+
 @media screen and (max-width: 950px) {
   .navbar-class .icon {
     display: block;
