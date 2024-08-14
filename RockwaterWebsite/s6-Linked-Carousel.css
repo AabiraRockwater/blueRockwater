@@ -18,7 +18,6 @@
 
 .lc-left-div {
   margin: 10px;
-  /* margin-top: 100px; */
   float: left;
 }
 .lc-title {
@@ -67,15 +66,14 @@
   float: right;
   min-width: 500px;
   margin: 10px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   /* margin-right: 60px; */
 }
 .lc-carousel-container {
   margin: 0px;
-  margin-top: 20px;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 0.8vw;
+  padding-top: 1.6vw;
+  padding-bottom: 1.6vw;
   border: 10px solid white;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.482);
 }
@@ -91,8 +89,9 @@
 }
 .section-6-linked-carousels img {
   max-width: 400px;
-  margin: 20px auto;
-  border-radius: 20px;
+  margin: 20px;
+  /* border-radius: 20px; */
+  border-radius: 1.6vw;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.372);
 
 }
@@ -100,6 +99,14 @@
 
 
 /* ---------------------------- Media Queries ---------------------------- */
+
+
+@media screen and (width <= 1280px) {
+  .lc-left-div {
+    transform: translateX(-50px);
+  }
+
+}
 
 
 @media screen and (1400px < width) {
@@ -111,6 +118,7 @@
     font-size: 73px;
   }
 
+
   .lc-right-div {
       float: right;
       min-width: 550px;
@@ -121,7 +129,7 @@
 
   .lc-carousel-container {
       margin: 0;
-      padding: 10px;
+      /* padding: 10px; */
       min-width: 550px;
       min-height: 550px;
       margin-left: 50px;
@@ -175,20 +183,32 @@
     font-size: 77px;
   }
 
+  .lc-nav-text {
+    font-size: 60px;
+  }
+
+  .carousel-nav {
+    min-width: 100%;
+  }
+
+  .carousel-cell-nav {
+    height: 150px;
+  }
+
   .lc-right-div {
-      min-width: 650px;
-      min-height: 650px;
+    min-width: 650px;
+    min-height: 650px;
   }
 
   .lc-carousel-container {
-      min-width: 650px;
-      min-height: 650px;
-      border: 17px solid white;
+    min-width: 650px;
+    min-height: 650px;
+    border: 17px solid white;
 
   }
 
   .section-6-linked-carousels img {
-      max-width: 600px;
+    max-width: 600px;
   }
 }
 
@@ -196,7 +216,7 @@
 @media screen and (2200px < width) {
 
   .lc-title {
-    font-size: 80px;
+    font-size: 120px;
   }
 
   .lc-right-div {

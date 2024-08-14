@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Flikitty Carousel -->
+    <link rel="stylesheet" href="../flickity-docs/docs/flickity.min.css" />
+    <link rel="stylesheet" href="../flickity-docs/docs/flickity.css" />
+    <link rel="stylesheet" href="Everything.css" />
+
+    <style>
+      @font-face {
+        font-family: "Raleway";
+        /* src: url("../Allura,Raleway/Raleway/Raleway-VariableFont_wght.ttf") format("truetype"); */
+        src: url("../Allura,Raleway/Raleway/Raleway-VariableFont_wght.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "Allura";
+        src: url("../Allura,Raleway/Allura/Allura-Regular.ttf")
+          format("truetype");
+      }
+      .raleway-font {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      .allura-regular {
+        font-family: "Allura", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      /* ------------------------------------------------------------------------------------------------------------------ */
+
+      .section-6-linked-carousels {
+        min-height: 100vh;
+        max-height: 100vh;
+        display: flex;
+        background-color: white;
+        background: linear-gradient(
+          to right,
+          rgb(255, 255, 255) 0%,
+          rgb(255, 255, 255) 50%,
+          rgb(219, 255, 219) 40%,
+          rgb(185, 185, 255) 100%
+        );
+        color: rgb(153, 163, 255);
+        letter-spacing: 2px;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+
+      .lc-wrapper {
+        /* background-color: rgba(255, 0, 0, 0.667); */
+        margin: 2.5vw;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .lc-left-div {
+        float: left;
+      }
+      .lc-title {
+        font-size: 70px;
+        font-weight: 750;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        margin-left: 60px;
+        letter-spacing: 5px;
+      }
+
+      .carousel-nav {
+        max-height: 200px;
+        max-width: 500px;
+        overflow: hidden;
+        margin-top: 0px;
+      }
+
+      .carousel-cell-nav {
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        width: 100%;
+        height: 80px;
+      }
+
+      .lc-nav-text {
+        font-size: 40px;
+        margin: 51px;
+        padding: 10px;
+        text-transform: uppercase;
+        color: rgb(153, 163, 255);
+      }
+      .section-6-linked-carousels .flickity-prev-next-button {
+        color: rgb(153, 163, 255);
+        background: transparent;
+      }
+      .section-6-linked-carousels .flickity-prev-next-button:hover {
+        color: rgb(255, 255, 255);
+        background: rgb(153, 163, 255);
+      }
+      .lc-right-div {
+        float: right;
+        min-width: 500px;
+        margin-right: 30px;
+      }
+      .lc-carousel-container {
+        margin: 0px;
+        margin-top: 20px;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 10px solid white;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.482);
+      }
+      .carousel-main {
+        margin: auto;
+      }
+      .carousel-cell-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+      }
+      .section-6-linked-carousels img {
+        max-width: 400px;
+        margin: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.372);
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="section-6-linked-carousels sticky">
+      <div class="lc-wrapper">
+        <div class="lc-left-div">
+          <h1 class="lc-title raleway-font">
+            Innovative<br />Solutions<br />For
+          </h1>
+          <div class="carousel carousel-nav">
+            <div class="carousel-cell-nav">
+              <p class="lc-nav-text raleway-font">Food and Beverage</p>
+            </div>
+            <div class="carousel-cell-nav">
+              <p class="lc-nav-text raleway-font">Agriculture</p>
+            </div>
+            <div class="carousel-cell-nav">
+              <p class="lc-nav-text raleway-font">Mining</p>
+            </div>
+            <div class="carousel-cell-nav">
+              <p class="lc-nav-text raleway-font">Institution</p>
+            </div>
+            <div class="carousel-cell-nav">
+              <p class="lc-nav-text raleway-font">Manufacture</p>
+            </div>
+            <div class="carousel-cell-nav">
+              <p class="lc-nav-text raleway-font">Water Treatment</p>
+            </div>
+          </div>
+        </div>
+        <div class="lc-right-div">
+          <div class="lc-carousel-container">
+            <div class="carousel carousel-main">
+              <div class="carousel-cell-main">
+                <img src="assets/display-pictures/crab-dish.png" alt="" />
+              </div>
+              <div class="carousel-cell-main">
+                <img src="assets/display-pictures/Agriculture.jpg" alt="" />
+              </div>
+              <div class="carousel-cell-main">
+                <img src="assets/display-pictures/mining.jpg" alt="" />
+              </div>
+              <div class="carousel-cell-main">
+                <img src="assets/display-pictures/Institution.jpg" alt="" />
+              </div>
+              <div class="carousel-cell-main">
+                <img src="assets/display-pictures/Manufacture.jpg" alt="" />
+              </div>
+              <div class="carousel-cell-main">
+                <img
+                  src="assets/display-pictures/Water-treatment.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- External -->
+    <script src="../flickity-docs/docs/flickity.pkgd.min.js"></script>
+    <script src="../flickity-docs/docs/flickity.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Internal -->
+    <script src="s6-Linked-Carousel.js"></script>
+  </body>
+</html>
