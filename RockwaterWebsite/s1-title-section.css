@@ -22,14 +22,14 @@ header {
   overflow: hidden;
 }
 .title-text {
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 700;
   margin: 0;
   margin-top: 15px;
   margin-bottom: 0px;
 }
 .subtitile-text {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 450;
   letter-spacing: 1px;
   margin: 5px;
@@ -38,7 +38,7 @@ header {
 }
 
 .sub-2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   letter-spacing: 3px;
   padding-top: 10px;
@@ -53,14 +53,14 @@ header {
 } */
 .learn-more-btn {
   padding: 20px;
-  min-width: 200px;
+  min-width: 150px;
 
   background-color: rgb(97, 95, 219);
   border: 3px solid  rgb(97, 95, 219);
   border-radius: 20px;
   margin: 20px;
   position: absolute;
-  bottom: 15%;
+  bottom: 17%;
   transition: all 0.3s ease;
 }
 .learn-more-btn:hover {
