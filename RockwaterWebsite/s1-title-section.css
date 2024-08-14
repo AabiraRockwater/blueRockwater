@@ -120,7 +120,7 @@ a.learn-more-btn > button {
 
 /* ---------------------------- Media Queries ---------------------------- */
 
-@media screen and (min-width: 1300px), screen and (min-height: 1000px) {
+@media screen and (min-width: 1300px), screen and (min-height: 800px) {
   .learn-more-btn {
     min-width: 14vw;
     margin: 2vh;

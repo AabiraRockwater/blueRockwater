@@ -356,7 +356,7 @@
   }
 }
 
-
+/* 
 @media screen and (2000px < width) {
   .solutions-intro-content {
     padding: 100px;
@@ -395,10 +395,10 @@
     font-size: 23px;
   }
 
-}
+} */
 
 
-@media screen and (2500px < width) {
+@media screen and (2000px < width) {
   
   .solutions-introduction {
     padding: 1.56vh;
