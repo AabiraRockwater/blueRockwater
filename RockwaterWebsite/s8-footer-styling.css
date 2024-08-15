@@ -177,3 +177,35 @@ footer .space {
         font-size: 1.2vw;
     }
 }
+
+@media screen and (1500px < width) {
+
+    .footer-1 h1{
+        font-size: 1.3vw;
+        margin-top: 1vw;
+    }
+    
+    .footer-1 p{
+        font-size: 0.8vw;
+    }
+
+    .footer-2 h1 {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (3000px < width) {
+
+    .footer-1 h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    
+    .footer-1 p{
+        font-size: 25px;
+    }
+
+    .footer-2 h1 {
+        font-size: 40px;
+    }
+}
