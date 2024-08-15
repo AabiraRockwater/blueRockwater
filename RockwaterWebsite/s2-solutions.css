@@ -432,7 +432,7 @@
     padding-bottom: 0;
   }
 
-  /* .new-solutions-text {
-    font-size: 35px;
-  } */
+  .new-solutions-text {
+    font-size: 0.8vw;
+  }
 }
