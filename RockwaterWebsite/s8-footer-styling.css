@@ -150,33 +150,8 @@ footer .space {
     .iframe-container iframe {
         width: 54.7vw;
     }
-
-    /* .footer-1 h1{
-        font-size: 2vw;
-        letter-spacing: 3px;
-    }
-    
-    .footer-1 p{
-        font-size: 17px;
-        margin-top: 5px;
-        padding-top: 5px;
-    } */
 }
 
-@media screen and (1500px < width) {
-
-    .footer-1 h1{
-        font-size: 1.3vw;
-    }
-    
-    .footer-1 p{
-        font-size: 0.8vw;
-    }
-
-    .footer-2 h1 {
-        font-size: 1.2vw;
-    }
-}
 
 @media screen and (1500px < width) {
 

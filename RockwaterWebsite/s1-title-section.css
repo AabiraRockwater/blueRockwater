@@ -2,6 +2,7 @@ header {
   position: relative;
   min-height: 100vh;
   max-height: 100vh;
+  overflow-x: hidden;
   background-color: rgb(255, 255, 255);
   background-attachment: fixed;
   background-position: top;
@@ -220,5 +221,77 @@ a.learn-more-btn > button {
     padding: 2vh;
     min-width: 10vw;
     margin: 3vh;
+  }
+}
+
+
+/* ---------------------------- MOBILE PHONES ---------------------------- */
+
+@media screen and (max-width: 1000px) {
+
+  /* #plus-icon-1, #plus-icon-2 {
+    max-width: 100px;
+  } */
+
+  #des-2, #des-1 {
+    max-width: 150vw;
+  }
+
+  .title-text {
+    font-size: 9vw;
+    padding: 0.3vw;
+  }
+
+  .subtitile-text {
+    font-size: 3.5vw;
+    padding: 0.7vw;
+  }
+
+  .sub-2 {
+    font-size: 3vw;
+    padding: 0.5vw;
+  }
+
+  a.learn-more-btn > button {
+    font-size: 2vw;
+  }
+}
+
+
+
+@media screen and (width < 800px) {
+  #des-1 {
+    width: 1000px;
+    height: 500px;
+  }
+  #des-2 {
+    width: 800px;
+    height: 400px;
+  }
+  .learn-more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px;
+  }
+}
+
+@media screen and (width < 600px) {
+  #des-1 {
+    width: 1200px;
+    height: 400px;
+  }
+  #des-2 {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .learn-more-btn {
+    padding: 10px;
+    min-width: 100px;
   }
 }
