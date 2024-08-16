@@ -31,3 +31,10 @@
 .scroll-container img:hover {
     background-color: rgb(231, 255, 210);
 }
+
+
+@media screen and (width < 850px) {
+    .scroll-container {
+        display: none;
+    }
+}

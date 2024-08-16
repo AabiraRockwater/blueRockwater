@@ -1,3 +1,8 @@
+.transparent-layer {
+    min-height: 100vh;
+}
+
+
 .stacking-cards {
     height: 100vh;
     position: relative;
@@ -64,6 +69,7 @@
     flex-direction: column;
 }
 /* ------------------ right ------------------- */
+
 
 
 
@@ -220,16 +226,10 @@
     }
 
     .stacking-cards .right-div h1 {
-        font-size: 3.5vh;
-    }
-
-    .stacking-cards .right-div h1 {
         font-size: 2vw;
         margin: 40px;
         margin-top: 5vw;
     }
-
-    /* --------------------------------------------- */
      
     .service-box .wrapper {
         max-width: 23.483vw;
@@ -304,5 +304,314 @@
         max-width: 7vw;
         transform: translate(-7vw, 7vw);
     }
+}
+
+
+/* ---------------------------- PHONE RESPONSIVNESS ---------------------------- */
+
+
+@media screen and (width < 1270px) {
+    
+
+    .stacking-cards .left-div .bottom-div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stacking-cards .left-div .bottom-div p {
+        font-size: 60px;
+        min-width: 400px;
+        margin-top: 0;
+    }
+
+    .stacking-services .hover-reminder {
+        max-width: 130px;
+        transform: translate(-130px, 130px);
+    }
+
+    .service-box{
+        min-width: auto;
+        max-width: auto;
+        width: 450px;
+        margin-top: 40px;
+    }
+
+    .service-box .wrapper {
+        max-width: 250px;
+    }
+
+
+    .stacking-services img {
+        max-width: 250px;
+        position: relative;
+        display: block;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
+    }
+
+    .service-box .img-content {
+        width: 250px;
+    }
+
+    .service-box .img-content p{
+        font-size: 16px;
+    }
+
+    .stacking-services li {
+        margin-left: 50px;
+        font-size: 12px;
+    }
+    .stacking-services h1 {
+        font-weight: 890;
+    }
+    .stacking-services.div-1  li {
+        transform: translateY(0px);
+    }
+    .stacking-services.div-2  li {
+        transform: translateY(100px);
+    }
+    .stacking-services.div-3  li {
+        transform: translateY(200px);
+    }
+
+}
+
+
+@media screen and (width < 1100px) {
+    
+    .stacking-cards .left-div .bottom-div p {
+        font-size: 55px;
+        min-width: 380px;
+    }
+    
+    .stacking-services li {
+        margin-left: 40px;
+        font-size: 11px;
+    }
+
+}
+
+
+@media screen and (width < 1000px) {
+
+    .stacking-cards .left-div .bottom-div p {
+        font-size: 50px;
+        min-width: 350px;
+    }
+    
+    
+    .stacking-services .hover-reminder {
+        max-width: 120px;
+        transform: translate(-120px, 120px);
+    }
+
+    .service-box{
+        min-width: auto;
+        max-width: auto;
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    .service-box .wrapper {
+        max-width: 230px;
+    }
+
+    .stacking-services img {
+        max-width: 230px;
+    }
+
+    .service-box .img-content {
+        width: 230px;
+    }
+
+    .service-box .img-content p{
+        font-size: 14px;
+    }
+
+    .stacking-services li {
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    .stacking-services h1 {
+        font-weight: 870;
+    }
+
+}
+
+
+@media screen and (width < 900px) {
+
+
+    .stacking-cards {
+        flex-direction: column;
+    }
+    
+    .stacking-cards .left-div {
+        display: none;
+    }
+    
+    .stacking-cards .right-div {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .stacking-services {
+        justify-content: center;
+    }
+    
+    .stacking-services .hover-reminder {
+        display: none;
+    }
+    
+    .service-box{
+       width: 450px;
+       margin-top: 30px;
+    }
+    
+    .service-box .wrapper {
+        max-width: 300px;
+    }
+    
+    .stacking-services img {
+        max-width: 300px;
+    }
+    
+    .service-box .img-content {
+        width: 300px;
+    }
+    
+    .div-2 .wrapper {
+        transform: rotate(3deg) translateY(25px);
+    }
+    .div-3 .wrapper {
+        transform: rotate(-5deg) translateY(20px);
+    }
+    
+    .stacking-services li {
+        font-size: 14px;
+    }
+    .stacking-services h1 {
+        font-weight: 900;
+    }
+    .stacking-services.div-1  li {
+        transform: translateY(0px);
+    }
+    .stacking-services.div-2  li {
+        transform: translateY(120px);
+    }
+    .stacking-services.div-3  li {
+        transform: translateY(240px);
+    }
+
+}
+
+
+@media screen and (width < 700px) {
+    
+    .service-box .wrapper {
+        max-width: 280px;
+    }
+    
+    .stacking-services img {
+        max-width: 280px;
+    }
+    
+    .service-box .img-content {
+        width: 280px;
+    }
+    
+    .stacking-services li {
+        font-size: 12px;
+    }
+    
+}
+
+
+
+@media screen and (width < 600px) {
+    
+    .stacking-cards .right-div h1 {
+        font-size: 25px;
+    }
+
+    .service-box{
+       width: 400px;
+       margin: 0;
+       padding: 0;
+    }
+    
+    .service-box .wrapper {
+        max-width: 250px;
+    }
+    
+    .stacking-services img {
+        max-width: 250px;
+    }
+    
+    .service-box .img-content {
+        width: 250px;
+    }
+    
+    
+    .stacking-services li {
+        font-size: 10px;
+    }
+
+    .stacking-services.div-1  li {
+        transform: translateY(0px);
+    }
+    .stacking-services.div-2  li {
+        transform: translateY(100px);
+    }
+    .stacking-services.div-3  li {
+        transform: translateY(200px);
+    } 
+}
+
+
+
+@media screen and (width < 500px) {
+    .stacking-cards .right-div h1 {
+        font-size: 21px;
+    }
+
+    .service-box{
+        margin-top: 20px;
+       width: 350px;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+    }
+    
+    .stacking-services img {
+        max-width: 230px;
+    }
+    
+    .service-box .img-content {
+        width: 230px;
+    }
+    
+    
+    .stacking-services li {
+        font-size: 8px;
+        max-width: 230px;
+        list-style-type: none;
+
+    }
+
+    .stacking-services.div-1  li {
+        transform: translateY(50px);
+    }
+    .stacking-services.div-2  li {
+        transform: translateY(100px);
+    }
+    .stacking-services.div-3  li {
+        transform: translateY(140px);
+    } 
 }
 
