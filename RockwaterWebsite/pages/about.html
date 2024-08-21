@@ -14,14 +14,12 @@
     nav {
       /* background-image: linear-gradient(black, rgba(0, 0, 0, 0));
         background-image: linear-gradient(white, rgba(255, 255, 255, 0.637)); */
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: transparent;
       max-height: 60px;
     }
     .left-nav > a,
     .right-nav > a {
       color: white;
-      color: black;
-      text-shadow: 0px 0px 5px rgba(252, 252, 252, 0.235);
       font-size: 17px;
     }
     .right-nav > a:hover {
@@ -151,18 +149,20 @@
   <body class="raleway-font">
     <!-- Navbar -->
     <nav id="navbar" class="navbar-class">
-      <div class="left-nav raleway-font">
-        <a href="../index.html">ROCKWATER</a>
+      <div class="nav-container">
+        <div class="left-nav raleway-font">
+          <a href="../index.html">ROCKWATER</a>
+        </div>
+        <div class="right-nav">
+          <a class="raleway-font" href="../index.html">Home</a>
+          <a class="raleway-font" href="about.html">About</a>
+          <a class="raleway-font" href="../index.html#Divisions">Divisions</a>
+          <a class="raleway-font" href="products.html">Products</a>
+          <a class="raleway-font" href="safety.html">Safety</a>
+          <a class="raleway-font" href="contact.html">Contact</a>
+        </div>
+        <div class="icon" onclick="toggleMenu()">&#9776;</div>
       </div>
-      <div class="right-nav">
-        <a class="raleway-font" href="../index.html">Home</a>
-        <a class="raleway-font" href="about.html">About</a>
-        <a class="raleway-font" href="../index.html#Divisions">Divisions</a>
-        <a class="raleway-font" href="products.html">Products</a>
-        <a class="raleway-font" href="safety.html">Safety</a>
-        <a class="raleway-font" href="contact.html">Contact</a>
-      </div>
-      <div class="icon" onclick="toggleMenu()">&#9776;</div>
     </nav>
     <!-- Navbar -->
     <header>

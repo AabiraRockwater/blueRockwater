@@ -1,8 +1,7 @@
 nav.navbar-class {
-  font-size: large;
   width: 100%;
   max-width: auto;
-  height: 100px;
+  max-height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +10,13 @@ nav.navbar-class {
   top: 0;
   left: 0;
   z-index: 1000; 
+}
+
+.nav-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-nav {
@@ -24,7 +30,7 @@ nav.navbar-class {
   text-decoration: none;
   padding: 20px;
   font-weight: 700;
-  font-size: x-large;
+  font-size: large;
 }
 
 .left-nav > a:hover {
@@ -93,7 +99,7 @@ nav.navbar-class {
   .navbar-class.responsive .right-nav > a {
     padding: 30px;
     border: none;
-    font-size: x-large;
+    font-size: large;
     width: 100%;
     text-align: center;
   }

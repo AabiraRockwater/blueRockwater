@@ -14,20 +14,17 @@ window.addEventListener("scroll", function () {
 
     if (scrollTop === 0) {
       navbar.style.height = "100px";
-      lefttNavLinks.style.color = "rgb(0, 0, 0)";
+      lefttNavLinks.style.color = "rgb(255, 255, 255)";
+      navbar.style.backgroundColor = "transparent";
 
       rightNavLinks.forEach(function (link) {
         link.style.fontWeight = "400";
-        link.style.color = "rgb(0, 0, 0)";
+        link.style.color = "rgb(255, 255, 255)";
       });
       if (pathname.includes("index.html")) {
         navbar.style.backgroundColor = "transparent";
-        rightNavLinks.forEach(function (link) {
-          link.style.color = "rgb(255, 255, 255)";
-        });
-        lefttNavLinks.style.color = "rgb(255, 255, 255)";
       } else if (pathname.includes("about.html")) {
-        navbar.style.backgroundColor = "rgb(255, 255, 255, 0.9)";
+        // navbar.style.backgroundColor = "rgb(255, 255, 255, 0.9)";
       } else if (pathname.includes("safety.html")) {
         navbar.style.backgroundColor = "transparent";
         rightNavLinks.forEach(function (link) {

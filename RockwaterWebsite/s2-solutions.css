@@ -107,6 +107,8 @@
 
 .card-1 {
   background: url(assets/picture-backgrounds/Food-Service.png);
+  /* background-image: url('assets/picture-backgrounds/Food-Service.png'), linear-gradient(red, blue); */
+
   background-size: cover;
   /* background-position: top; */
 }
