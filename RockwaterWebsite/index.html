@@ -116,18 +116,19 @@
   <body>
     <!--------------- TITLE SECTION --------------->
     <header>
-      <nav id="navbar">
+      <nav id="navbar" class="navbar-class">
         <div class="left-nav raleway-font">
           <a href="index.html">ROCKWATER</a>
         </div>
         <div class="right-nav">
           <a class="raleway-font" href="index.html">Home</a>
           <a class="raleway-font" href="pages/about.html">About</a>
-          <a class="raleway-font" href="#Divisions">Solutions</a>
-          <a class="raleway-font" href="#">Products</a>
-          <a class="raleway-font" href="#">Safety</a>
-          <a class="raleway-font" href="#">Contact</a>
+          <a class="raleway-font" href="#Divisions">Divisions</a>
+          <a class="raleway-font" href="pages/products.html">Products</a>
+          <a class="raleway-font" href="pages/safety.html">Safety</a>
+          <a class="raleway-font" href="pages/contact.html">Contact</a>
         </div>
+        <div class="icon" onclick="toggleMenu()">&#9776;</div>
       </nav>
       <section class="title-section">
         <img
@@ -140,15 +141,13 @@
           src="assets/picture-backgrounds/blue-wave-1.png"
           alt=""
         />
-        <img id="plus-icon-1" src="assets/icons/plus-icon.png" alt="" />
-        <img id="plus-icon-2" src="assets/icons/plus-icon.png" alt="" />
 
         <!-- <img
           class="title-logo"
           src="./assets/leaves-background/logo-6-transparent (1).png"
           alt=""
         /> -->
-        <h1 class="title-text raleway-font"><br /><br />ROCKWATER</h1>
+        <h1 class="title-text raleway-font"><br />ROCKWATER</h1>
         <p class="subtitile-text sub-1 raleway-font">PROFESSIONAL PRODUCTS</p>
         <p class="sub-2 raleway-font">SOLUTIONS THAT WORK</p>
 
@@ -159,7 +158,6 @@
     </header>
     <!--------------- TITLE SECTION --------------->
 
-    <section class="buffer-section-picture"></section>
     <!---------------------------- SECTION TWO ---------------------------->
     <section class="new-section-2-solutions">
       <div class="solutions-introduction">
@@ -170,12 +168,6 @@
               Introducing <span class="main-name">RockWater</span>
             </h1>
             <p class="solutions-intro-text raleway-font">
-              <span class="intro-sub-title"
-                >An Advanced Sanitization and Hygiene Solutions Company</span
-              >
-              <!-- <span>AN ADVANCED SANITIZATION AND HYGIENE SOLUTION COMPANY</span> -->
-
-              <br />
               Rockwater specializes in high-quality sanitation and hygiene
               solutions for the food industry. Our extensive range of
               <span>certified</span> cleaning chemicals are approved by the
@@ -283,27 +275,6 @@
         </div>
       </div>
       <div class="divisions-row-buffer"></div>
-      <!-- <div class="divisions-row row-2 green-cleaning">
-        <div class="cell-2">
-          <div class="cell-2-content-box">
-            <div class="border-box"></div>
-            <img src="assets/display-pictures/green-cleaning-1.jpg" alt="" />
-          </div>
-        </div>
-        <div class="cell-1">
-          <div class="cell-1-content-box">
-            <div class="cell-1-icon">
-              <img src="assets/icons/green-icon.png" alt="" />
-            </div>
-            <h1>Green Cleaning</h1>
-            <p>
-              Find out about our <br/>
-              Eco-friendly products
-            </p>
-            <a href="#"><button>Find</button></a>
-          </div>
-        </div>
-      </div> -->
       <div class="divisions-row-buffer"></div>
       <div class="divisions-row row-3 contact">
         <div class="cell-2">
@@ -356,6 +327,7 @@
       <section class="buffer-section"></section>
 
       <!---------------------------- BUFFER SECTION ---------------------------->
+      <section class="buffer-section-picture"></section>
 
       <!---------------------------- SECTION SIX ---------------------------->
       <section class="section-6-linked-carousels sticky">

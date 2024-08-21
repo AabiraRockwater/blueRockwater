@@ -5,6 +5,7 @@ var lefttNavLinks = document.querySelector(".left-nav a");
 
 window.addEventListener("scroll", function () {
   var scrollTop = document.documentElement.scrollTop || window.pageYOffset;
+  var pathname = window.location.pathname;
 
   if (scrollTop > lastScrollTop) {
     navbar.style.top = "-80px";
@@ -13,13 +14,27 @@ window.addEventListener("scroll", function () {
 
     if (scrollTop === 0) {
       navbar.style.height = "100px";
-      navbar.style.backgroundColor = "transparent";
       lefttNavLinks.style.color = "rgb(0, 0, 0)";
+
       rightNavLinks.forEach(function (link) {
-        // link.style.textShadow = "0px 0px 5px rgba(0, 0, 0, 0.9)";
         link.style.fontWeight = "400";
         link.style.color = "rgb(0, 0, 0)";
       });
+      if (pathname.includes("index.html")) {
+        navbar.style.backgroundColor = "transparent";
+        rightNavLinks.forEach(function (link) {
+          link.style.color = "rgb(255, 255, 255)";
+        });
+        lefttNavLinks.style.color = "rgb(255, 255, 255)";
+      } else if (pathname.includes("about.html")) {
+        navbar.style.backgroundColor = "rgb(255, 255, 255, 0.9)";
+      } else if (pathname.includes("safety.html")) {
+        navbar.style.backgroundColor = "transparent";
+        rightNavLinks.forEach(function (link) {
+          link.style.color = "rgb(255, 255, 255)";
+        });
+        lefttNavLinks.style.color = "rgb(255, 255, 255)";
+      }
     } else {
       navbar.style.height = "60px";
       navbar.style.backgroundColor = "rgb(153, 163, 255)";
@@ -35,15 +50,7 @@ window.addEventListener("scroll", function () {
   lastScrollTop = scrollTop;
 });
 
-
-
-/* ---------------------------- Media Queries ---------------------------- */
-
-function myFunction() {
-  var x = document.getElementById("navbar");
-  if (x.className === "navbar-class") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar-class";
-  }
+function toggleMenu() {
+  const nav = document.querySelector(".navbar-class");
+  nav.classList.toggle("responsive");
 }

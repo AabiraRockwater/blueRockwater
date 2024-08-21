@@ -3,11 +3,13 @@ header {
   min-height: 100vh;
   max-height: 100vh;
   overflow-x: hidden;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background-image: url(assets/picture-backgrounds/group-blacknwhite.png);
   background-attachment: fixed;
   background-position: top;
   background-size: cover;
 }
+
 
 .title-section {
   height: 100vh;
@@ -17,44 +19,44 @@ header {
   align-items: center;
   text-align: center;
   color: white;
-  color: rgb(61, 61, 61);
+  /* color: rgb(61, 61, 61); */
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 .title-text {
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 700;
   margin: 0;
   margin-top: 15px;
   margin-bottom: 0px;
 }
 .subtitile-text {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 450;
   letter-spacing: 1px;
   margin: 5px;
   color: rgb(230, 230, 230);
-  color: rgb(61, 61, 61);
+  /* color: rgb(61, 61, 61); */
 }
 
 .sub-2 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 300;
   letter-spacing: 3px;
   padding-top: 10px;
   color: rgb(230, 230, 230);
-  color: rgb(61, 61, 61);
+  /* color: rgb(61, 61, 61); */
 }
-/* .title-logo {
+.title-logo {
   max-width: 150px;
   width: 150px;
   height: 125px;
   filter: invert(0.7);
-} */
+}
 .learn-more-btn {
   padding: 20px;
-  min-width: 150px;
+  min-width: 200px;
 
   background-color: rgb(97, 95, 219);
   border: 3px solid  rgb(97, 95, 219);
@@ -83,13 +85,14 @@ a.learn-more-btn > button {
 
 #des-2 {
   position: absolute;
-  width: 1200px;
+  width: 1000px;
   top: 0;
   right: 0;
-  transform: translate(50px,-10px);
+  /* transform: translate(70px,-10px); */
   filter: saturate(0.9);
-
+  opacity: 0.8;
   z-index: -1;
+  display: none;
 }
 
 #des-1 {
@@ -97,9 +100,12 @@ a.learn-more-btn > button {
   width: 1200px;
   bottom: 0;
   left: 0;
-  transform: translate(-20px, 120px);
+  /* transform: translate(-20px, 120px); */
+  opacity: 0.8;
   filter: saturate(0.9);
   z-index: -1;
+  display: none;
+
 }
 
 #plus-icon-1 {

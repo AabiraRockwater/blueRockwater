@@ -1,11 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-</head>
-<body>
-    This is the About Us page.
-</body>
+    <link rel="stylesheet" href="../Everything.css" />
+    <link rel="stylesheet" href="../Navbar.css" />
+    <link rel="stylesheet" href="../Font-styling.css" />
+    <link rel="stylesheet" href="../s8-footer-styling.css">
+  </head>
+  <style>
+    /* -------------- Navbar -------------- */
+    nav {
+      /* background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+        background-image: linear-gradient(white, rgba(255, 255, 255, 0.637)); */
+      background-color: rgba(255, 255, 255, 0.9);
+      max-height: 60px;
+    }
+    .left-nav > a,
+    .right-nav > a {
+      color: white;
+      color: black;
+      text-shadow: 0px 0px 5px rgba(252, 252, 252, 0.235);
+      font-size: 17px;
+    }
+    .right-nav > a:hover {
+      border-right: 2px solid rgb(153, 132, 255);
+      border-left: 2px solid rgb(153, 132, 255);
+    }
+    /* -------------- Navbar -------------- */
+
+    /* -------------- Header Background -------------- */
+    .wrapper {
+      width: 100%;
+      height: 94vh;
+      overflow: hidden;
+    }
+    .background-img {
+      background: url(../assets/picture-backgrounds/rocks-background-1.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: relative;
+    }
+    .des-1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 750px;
+      opacity: 0.8;
+    }
+    .des-2 {
+      position: absolute;
+      bottom: 0;
+      right: 130px;
+      width: 300px;
+      height: 250px;
+    }
+    .shade-layer {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .text-content {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+    }
+    .sub-heading,
+    .heading,
+    .description {
+      padding: 10px;
+      margin: 5px;
+    }
+    .sub-heading {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .sub-heading span {
+      color: rgb(149, 120, 255);
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+    .heading {
+      font-weight: 500;
+      font-size: 50px;
+      margin-top: 20px;
+      letter-spacing: 1.5px;
+      color: white;
+      text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.95);
+      font-variant: small-caps;
+    }
+    .description {
+      font-size: 15px;
+      color: rgb(232, 232, 232);
+      max-width: 80%;
+      letter-spacing: 0.8px;
+      line-height: 1.5;
+    }
+    /* -------------- Header Background -------------- */
+
+    /* -------------- Main Section -------------- */
+    main {
+      margin: 10px;
+      margin-top: 40px;
+      z-index: 2;
+      background-color: white;
+    }
+    .section-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .section-1, .section-2 {
+        max-width: 80%;
+        margin: 40px;
+        padding: 10px;
+    }
+    .section-1 {
+        margin-top: 20px;
+    }
+    section h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: rgb(153, 132, 255);
+    }
+    section {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 2;
+    }
+    ul {
+        margin-left: 8%;
+    }
+    /* -------------- Main Section -------------- */
+  </style>
+  <body class="raleway-font">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar-class">
+      <div class="left-nav raleway-font">
+        <a href="../index.html">ROCKWATER</a>
+      </div>
+      <div class="right-nav">
+        <a class="raleway-font" href="../index.html">Home</a>
+        <a class="raleway-font" href="about.html">About</a>
+        <a class="raleway-font" href="../index.html#Divisions">Divisions</a>
+        <a class="raleway-font" href="products.html">Products</a>
+        <a class="raleway-font" href="safety.html">Safety</a>
+        <a class="raleway-font" href="contact.html">Contact</a>
+      </div>
+      <div class="icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+    <!-- Navbar -->
+    <header>
+      <!-- header section -->
+      <div class="wrapper">
+        <div class="background-img">
+          <img
+            class="des-1"
+            src="../assets/picture-backgrounds/triangle-purp.png"
+            alt=""
+          />
+          <img
+            class="des-2"
+            src="../assets/picture-backgrounds/triangle-blue.png"
+            alt=""
+          />
+          <div class="shade-layer">
+            <div class="text-content">
+              <br />
+              <br />
+              <div class="sub-heading">Discover <span>ROCKWATER</span></div>
+              <div class="heading">
+                Crafting Quality Solutions <br />Since 1991
+              </div>
+              <div class="description">
+                Learn about us and our mission. <br />Since our inception in
+                1991 we have grown from the ‘ground up’ to proudly offer the
+                highest quality products and related equipment to the food
+                processing & food service market.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header section -->
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <section class="section-wrapper">
+        <section class="section-1">
+          <h1>About us</h1>
+          <p>
+            At Rockwater, we’re dedicated to one clear goal: providing
+            exceptional cleaning solutions that go beyond the rigorous standards
+            of the Canadian Food Inspection Agency and Health Canada. Our
+            diverse range of cleaning chemicals is designed not just for
+            compliance, but to deliver the highest level of hygiene and
+            sanitation our customers trust.
+            <br />
+            We believe in filling every gap, which is why we’ve partnered with
+            iconic companies to extend our reach and capabilities. This
+            strategic collaboration has positioned Rockwater Professional
+            Products as a versatile and dependable player across multiple
+            markets.
+          </p>
+        </section>
+        <section class="section-2">
+          <h1>What we offer</h1>
+            
+          <p>At Rockwater, our team is committed to delivering:
+            <ul>
+                <li>
+                    The highest quality cleaning & sanitizing chemicals (to keep 
+                    processing facilities microbe free) (click on “COMPANY DIVISIONS” 
+                    for details)
+                </li>
+                <li>
+                    A proven Drum Recycling Program, certified by TDG (to keep plastic 
+                    waste to a minimum)
+                </li>
+                <li>
+                    A color-coded lineup of cleaning tools (to allow tracking of food 
+                    borne contaminants & to minimize cross-contamination) (REMCO PRODUCTS)
+                </li>
+                <li>
+                    On-site employee training, including employee certificates (to improve 
+                    employee safety & increase productivity)
+                </li>
+                <li>
+                    A one-stop-shop (all the chemical & food safety products available under 
+                    one roof)
+                </li>
+            </ul>
+        </p>
+        </section>
+      </section>
+    </main>
+    <!-- Main Section -->
+
+    <!---------------------------- FOOTER SECTION ---------------------------->
+    <footer class="raleway-font" id="footer">
+      <div class="footer-background">
+        <div class="space"></div>
+        <div class="footer-1">
+          <div class="footer-content">
+            <div class="footer-contact">
+              <h1>Contact</h1>
+              <br />
+              <p>
+                <b>Email:</b> &nbsp;<i
+                  class="fa fa-envelope"
+                  aria-hidden="true"
+                ></i>
+                admin@rockwater.net
+              </p>
+              <p>
+                <b>Phone:</b> &nbsp;<i
+                  class="fa fa-phone"
+                  aria-hidden="true"
+                ></i>
+                709-745-7625
+              </p>
+              <p>
+                <b>Socials:</b>&nbsp;
+                <a
+                  href="https://www.instagram.com/rockwater_professionalproducts/"
+                  class="insta"
+                  target="_blank"
+                >
+                  <i class="fa fa-instagram"></i> Instagram</a
+                >
+                &nbsp;|&nbsp;
+                <a
+                  href="https://www.facebook.com/ROCKWATERPP"
+                  class="facebook"
+                  target="_blank"
+                >
+                  <i class="fa fa-facebook"></i> Facebook</a
+                >
+              </p>
+            </div>
+
+            <div class="footer-address">
+              <h1>
+                Address <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </h1>
+              <br />
+              <p>5 Panther Place,</p>
+              <p>Mount Pearl, NL,</p>
+              <p>Canada</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-2">
+          <h1>Find Us!</h1>
+          <div class="iframe-container">
+            <!-- iframe height is set to 299 instead of 300 since to hide reviews  -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10776.469873332308!2d-52.828594999999986!3d47.52657599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0cbb5e15e29641%3A0x78565e1f88392aa3!2sROCKWATER%20Professional%20Products!5e0!3m2!1sen!2sus!4v1722348248208!5m2!1sen!2sus"
+              width="700"
+              height="299"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="copyright-attributions">
+            <a class="copyright" href="#"
+              >Copyright &copy; 2024 RockWater. All Rights Reserved.</a
+            >
+            <br />
+            <a href="#">Attributions:</a>
+            <a
+              href="https://www.flaticon.com/free-icons/leaf"
+              title="leaf icons"
+              >Leaf icons created by Pixel perfect - Flaticon</a
+            >
+            <a href="https://thenounproject.com/icon/chemical-1792984/">
+              Chemical Icon Created by Adrien Coquet from Noun Project</a
+            >
+            <a
+              href="https://pngtree.com/freepng/circle-phone-call-icon-in-black-color_8997757.html"
+              >png image from pngtree.com/</a
+            >
+          </div>
+        </div>
+        <div class="space"></div>
+      </div>
+    </footer>
+    <!---------------------------- FOOTER SECTION ---------------------------->
+
+    <script src="../Navbar.js"></script>
+  </body>
 </html>

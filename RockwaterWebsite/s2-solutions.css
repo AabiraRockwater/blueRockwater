@@ -1,21 +1,3 @@
-/* .new-section-2-solutions {
-  min-height: 170vh;
-  background-color: rgb(255, 255, 255);
-  background-image: linear-gradient(
-    to left,
-    rgba(202, 255, 167, 0.151),
-    rgba(184, 184, 255, 0.224)
-  );
-  color: black;
-  color: rgb(45, 45, 45);
-
-  align-items: center;
-  text-align: center;
-  font-weight: 500;
-  position: relative;
-} */
-
-/*  ----------CHANGED FOR SHORTER WEBSITE------------- */
 .new-section-2-solutions {
   min-height: auto;
   max-height: auto;
@@ -70,7 +52,7 @@
 }
 
 .solutions-intro-text {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   padding: 30px;
   padding-top: 40px;

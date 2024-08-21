@@ -49,24 +49,29 @@
 
 .stacking-cards .right-div {
     background-color: rgb(185, 185, 255);
+    background-image: url(assets/picture-backgrounds/group-portrait.png);
+    background-size: 50%;
+    background-attachment: fixed;
+    background-position: left;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .stacking-cards .right-div h1 {
     min-height: 600px;
-    /* background-color: red; */
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
-    font-size: 33px;
-    font-weight: 400;
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.598);
     text-transform: uppercase;
     margin: 40px;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
+    display: none;
+
 }
 /* ------------------ right ------------------- */
 
@@ -82,6 +87,8 @@
     position: relative;
     text-align: left;
     color: white;
+    /* color: rgb(180, 187, 254); */
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
 }
 
 .stacking-services .service-img-container {
@@ -112,6 +119,8 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    /* margin-top: 40px; */
+    transform: translate(20px ,-20px);
 }
 
 .service-box .wrapper {
@@ -177,7 +186,7 @@
     margin-left: 60px;
     margin-top: 0px;
     padding: 5px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -457,7 +466,10 @@
         height: 100%;
         width: 100%;
         margin: 0;
+        background-size: cover;
+
     }
+    
 
     .stacking-services {
         justify-content: center;

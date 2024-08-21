@@ -21,7 +21,7 @@ gsap.utils.toArray("#des-1").forEach((box) => {
 gsap.utils.toArray("#des-2").forEach((box) => {
   gsap.fromTo(
     box,
-    { x: 50, y: -10, rotation: 0 },
+    { x: 70, y: -10, rotation: 0 },
     {
       x: 0,
       y: -100,
@@ -79,23 +79,13 @@ tl.fromTo(
 tl.fromTo(
   "#des-2",
   { x: 0, y: -100, rotation: 10 },
-  { x: 50, y: -10, rotation: 0 },
+  { x: 70, y: -10, rotation: 0 },
   "-=0.5"
 );
 
-tl.fromTo(
-  "#plus-icon-1",
-  { y: -200 },
-  { y: 0 },
-  "-=0.7"
-);
+tl.fromTo("#plus-icon-1", { y: -200 }, { y: 0 }, "-=0.7");
 
-tl.fromTo(
-  "#plus-icon-2",
-  { y: -230 },
-  { y: 0 },
-  "-=0.7"
-);
+tl.fromTo("#plus-icon-2", { y: -230 }, { y: 0 }, "-=0.7");
 
 gsap.utils
   .toArray(["#des-1", "#des-2", "#plus-icon-1", "#plus-icon-2"])
