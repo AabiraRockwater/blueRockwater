@@ -30,6 +30,8 @@
 
 .scroll-container img:hover {
     background-color: rgb(231, 255, 210);
+    background: linear-gradient(30deg, #f377accb, #ffb27bc1);
+
 }
 
 

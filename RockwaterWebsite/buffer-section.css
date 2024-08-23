@@ -66,3 +66,10 @@
   background-color: transparent;
 }
 /*  ------------ Transparent Layer --------------- */
+
+
+@media screen and (width < 900px) {
+  .buffer-section-picture {
+    display: none;
+  }
+}

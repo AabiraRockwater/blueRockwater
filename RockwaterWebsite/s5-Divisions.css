@@ -65,7 +65,9 @@
 
 .cell-1 button {
     background-color: rgb(153, 163, 255);
-    border: 3px solid rgb(153, 163, 255);
+    /* border: 3px solid rgb(153, 163, 255);
+    border: 3px solid rgb(255, 255, 255); */
+    border: none;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -84,9 +86,13 @@
 
 .cell-1 button:hover {
     background-color: rgb(255, 255, 255);
-    border: 3px solid rgb(153, 163, 255);
+    /* border: 3px solid rgb(153, 163, 255);
+    border: 3px solid rgb(255, 255, 255); */
+
+    background: linear-gradient(30deg, #fb4795, #ff994f);
     color: rgb(153, 163, 255);
-    border-radius: 0px;
+    color: white;
+    border-radius: 2px;
 }
 
 

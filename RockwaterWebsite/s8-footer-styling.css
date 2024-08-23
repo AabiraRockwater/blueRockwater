@@ -11,7 +11,9 @@ footer {
     position: relative;
 
     /* background-image: url("assets/display-pictures/gros_morn-1.jpg"); */
-    background-image: url("assets/leaves-background/Title_Leaves_background-4.jpg");
+    /* background-image: url("assets/leaves-background/Title_Leaves_background-4.jpg"); */
+    background-image: url("assets/picture-backgrounds/rocks-background-1.jpg");
+
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
@@ -30,6 +32,8 @@ footer {
     background: -webkit-linear-gradient(
         rgb(68, 14, 130),
         rgba(164, 225, 149, 0.039));
+    background: linear-gradient( rgba(216, 115, 42, 0.9), rgba(251, 71, 149, 0.2));
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,9 +91,11 @@ footer .space {
     will-change: auto;
     text-decoration: none;
     color: rgb(255, 35, 244);
+    /* color: rgb(255, 154, 250); */
 }
 .insta:hover {
     text-shadow: 0px 0px 5px rgb(255, 143, 249);
+    /* text-shadow: 0px 0px 5px rgb(255, 255, 255); */
 }
 .facebook {
     will-change: auto;
@@ -395,6 +401,8 @@ footer .space {
     
 }
 
+
+
 @media screen and (width < 550px) {
 
     .footer-1 {
@@ -459,6 +467,15 @@ footer .space {
     .iframe-container iframe {
         width:200px;
         height: 100px;
+    }
+    
+}
+
+
+@media screen and (height < 400px) {
+    
+    .iframe-container iframe {
+        height: 120px;
     }
     
 }

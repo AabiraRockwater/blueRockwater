@@ -12,7 +12,6 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('assets/picture-backgrounds/group-blacknwhite.png');
   background-image: url('assets/picture-backgrounds/spray-bottle-1.jpg');
 
   background-attachment: fixed;

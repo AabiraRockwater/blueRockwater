@@ -12,6 +12,284 @@
     <link rel="stylesheet" href="../Font-styling.css" />
     <link rel="stylesheet" href="../s8-footer-styling.css" />
     <title>Rockwater - Contact Us</title>
+    <style>
+      /* -------------- BODY -------------- */
+      body {
+        position: relative;
+        margin: 0;
+        height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* background-image: url(../assets/picture-backgrounds/spray-bottle-1.jpg); */
+        background-image: url(../assets/picture-backgrounds/contact-background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        filter: blur(3px) brightness(0.8);
+        z-index: -1;
+      }
+      .des-1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 600px;
+        opacity: 0.5;
+        z-index: -1;
+        filter: blur(2px);
+      }
+      .des-2 {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        width: 300px;
+        height: 250px;
+        z-index: -1;
+      }
+      /* -------------- BODY -------------- */
+
+      /* -------------- Navbar -------------- */
+      nav {
+        max-height: 60px;
+      }
+      .left-nav > a,
+      .right-nav > a {
+        color: white;
+        /* color: black; */
+        text-shadow: 0px 0px 5px rgba(252, 252, 252, 0.235);
+        font-size: 16px;
+      }
+      .right-nav > a:hover {
+        border-right: 2px solid rgb(255, 255, 255);
+        border-left: 2px solid rgb(255, 255, 255);
+      }
+
+      .navbar-class .icon {
+        color: white;
+      }
+      /* -------------- Navbar -------------- */
+
+      /* ------------- Main ----------------- */
+      main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: rgba(7, 2, 38, 0.3);
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.566);
+      }
+      .container {
+        width: 80%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        max-height: 100%;
+        letter-spacing: 1.5px;
+      }
+      .left,
+      .right {
+        width: 50%;
+        height: 100%;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+      }
+      .left {
+        float: left;
+        background-color: white;
+        background: linear-gradient(30deg, #fb4795, #ff994f);
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.01);
+      }
+      .right {
+        float: right;
+      }
+      .left h1 {
+        font-size: 22px;
+        margin: 10px;
+      }
+      .left p {
+        font-size: 15px;
+        margin: 10px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1.form-title {
+        font-size: 25;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        color: rgb(224, 210, 255);
+      }
+      hr {
+        border: none;
+        width: 120px;
+        height: 5px;
+        background-color: rgb(224, 210, 255);
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .contact-inputs {
+        width: 350px;
+        width: 80%;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        border-radius: 50px;
+      }
+
+      textarea {
+        height: 100px !important;
+        border-radius: 20px !important;
+        padding-top: 15px;
+      }
+      .contact-inputs:focus {
+        border: 2.5px solid #ff994f;
+      }
+      .contact-inputs::placeholder {
+        color: #808080;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        gap: 10px;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(to left, #ff994f, #fb4795);
+        cursor: pointer;
+      }
+      button:hover {
+        background: rgb(182, 162, 255);
+      }
+
+      /* ___________________ RESPONSIVNESS _________________ */
+      @media screen and (width < 950px) {
+        .container {
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+        }
+        .left,
+        .right {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin: 20px;
+        }
+        .left {
+          justify-content: center;
+          align-items: start;
+        }
+        .des-1 {
+          max-width: 100vw;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="raleway-font">
+    <nav id="navbar" class="navbar-class">
+      <div class="nav-container">
+        <div class="left-nav raleway-font">
+          <a href="../index.html">ROCKWATER</a>
+        </div>
+        <div class="right-nav">
+          <a class="raleway-font" href="../index.html">Home</a>
+          <a class="raleway-font" href="about.html">About</a>
+          <a class="raleway-font" href="../index.html#Divisions">Divisions</a>
+          <a class="raleway-font" href="products.html">Products</a>
+          <a class="raleway-font" href="safety.html">Safety</a>
+          <a class="raleway-font" href="contact.html">Contact</a>
+        </div>
+        <div class="icon" onclick="toggleMenu()">&#9776;</div>
+      </div>
+    </nav>
+    <main>
+      <img
+        class="des-1"
+        src="../assets/picture-backgrounds/triangle-purp.png"
+        alt=""
+      />
+      <img
+        class="des-2"
+        src="../assets/picture-backgrounds/triangle-blue.png"
+        alt=""
+      />
+      <div class="container">
+        <div class="left">
+          <div class="general-inq">
+            <h1>General Inquiries</h1>
+            <p>
+              Tel: (709) 745-7625 | M-F 8AM-4:30PM<br />
+              Email: admin@rockwater.net<br />
+              Tel: (709) 745-7625 ext 110<br />
+              Fax: (709) 745-8228<br />
+            </p>
+          </div>
+          <div class="service-repair">
+            <h1>Equipment Service and Repair</h1>
+            <p>
+              Tel: (709) 743-7855<br />
+              Email: whickman@rockwater.net<br />
+            </p>
+          </div>
+          <div class="food-safety">
+            <h1>Food Safety Specialist Chemical Engineering Technology</h1>
+            <p>Tel: (709) 743-7898 <br />Email: jallison@rockwater.net</p>
+          </div>
+        </div>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="right"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="336d7459-2190-4246-a1e2-53ad7ba10c4a"
+          />
+
+          <h1 class="form-title">Get in Touch!</h1>
+          <hr />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="contact-inputs"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="contact-inputs"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="contact-inputs"
+          ></textarea>
+          <button type="submit">Submit →</button>
+        </form>
+      </div>
+    </main>
+    <script src="../Navbar.js"></script>
+  </body>
 </html>

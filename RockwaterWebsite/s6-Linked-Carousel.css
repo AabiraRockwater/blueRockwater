@@ -2,13 +2,29 @@
   min-height: 100vh;
   display: flex;
   background-color: white;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgb(255, 255, 255) 0%,
     rgb(255, 255, 255) 50%,
     rgb(219, 255, 219) 40%,
     rgb(185, 185, 255) 100%
   );
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 152, 79) 40%,
+    rgb(185, 185, 255) 100%
+  ); */
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 50%,
+    rgb(185, 185, 255) 40%,
+    rgb(255, 152, 79) 100%
+  );
+
+
   color: rgb(153, 163, 255);
   letter-spacing: 2px;
   justify-content: space-around;
@@ -393,6 +409,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    display: none;
   }
   
   .lc-left-div {

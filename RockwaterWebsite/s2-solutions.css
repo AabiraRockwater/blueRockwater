@@ -192,8 +192,10 @@
 }
 
 .solutions-background a:hover {
-  border: 2px solid rgb(176, 185, 255);
-  background-color: rgb(176, 185, 255);
+  /* border: 2px solid rgb(176, 185, 255);
+  background-color: rgb(176, 185, 255); */
+  background: linear-gradient(30deg, #fb4795, #ff984f);
+
 }
 
 .arrow-right {
