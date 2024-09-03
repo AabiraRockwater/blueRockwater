@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <!--  Social Media Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../Everything.css" />
     <link rel="stylesheet" href="../Navbar.css" />
     <link rel="stylesheet" href="../Font-styling.css" />
     <link rel="stylesheet" href="../s8-footer-styling.css">
+
+    <title>ROCKWATER - About Us</title>
   </head>
   <style>
     /* -------------- Navbar -------------- */
@@ -44,6 +50,13 @@
       display: flex;
       position: relative;
     }
+    @supports (-webkit-touch-callout: none) {
+      /* For iOS devices so it changes to scroll on Iphone*/
+      .background-img {
+        background-attachment: scroll;
+      }
+    }
+
     .des-1 {
       position: absolute;
       top: 0;
@@ -80,6 +93,7 @@
     .description {
       padding: 10px;
       margin: 5px;
+      z-index: 1;
     }
     .sub-heading {
       font-size: 18px;
@@ -149,6 +163,22 @@
     ul {
       margin-left: 8%;
     }
+    @media screen and (width < 1200px){
+      .des-1 {
+        max-width: 90vw;
+      }
+      .des-2 {
+        transform: scale(2) translate(-38vw, 20px);
+      }
+    }
+    @media screen and (width < 500px){
+      .des-2 {
+        display: none;
+      }
+      .sub-heading{
+        display: none;
+      }
+    }
     /* -------------- Main Section -------------- */
   </style>
   <body class="raleway-font">
@@ -156,7 +186,10 @@
     <nav id="navbar" class="navbar-class">
       <div class="nav-container">
         <div class="left-nav raleway-font">
-          <a href="../index.html">ROCKWATER</a>
+          <!-- <a href="../index.html">ROCKWATER</a> -->
+          <a href="index.html"
+          ><img src="../assets/icons/rockwater-logo-oldwhite.png" alt=""
+        /></a>
         </div>
         <div class="right-nav">
           <a class="raleway-font" href="../index.html">Home</a>
@@ -265,7 +298,9 @@
         <div class="footer-1">
           <div class="footer-content">
             <div class="footer-contact">
-              <h1>Contact</h1>
+              <!-- <h1>Contact</h1> -->
+              <h1>Contact <i class="fa fa-phone" aria-hidden="true"></i></h1>
+
               <br />
               <p>
                 <b>Email:</b> &nbsp;<i

@@ -48,14 +48,23 @@
 /* ------------------ RIGHT ------------------- */
 
 .stacking-cards .right-div {
-    background-color: rgb(185, 185, 255);
-    background-image: url(assets/picture-backgrounds/group-portrait.png);
+    background: url(assets/picture-backgrounds/group-portrait.png);
+    /* background: linear-gradient(30deg, rgba(23, 7, 79, 0.831), rgba(61, 52, 188, 0.233)),
+     url(assets/picture-backgrounds/rocks-background-1.jpg);
+      */
     background-size: 50%;
     background-attachment: fixed;
-    background-position: left;
+    background-position:right;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@supports (-webkit-touch-callout: none) {
+    /* For iOS devices so it changes to scroll on Iphone*/
+    .stacking-cards .right-div {
+      background-attachment: scroll;
+    }
 }
 
 .stacking-cards .right-div h1 {
@@ -150,7 +159,12 @@
     background: -webkit-linear-gradient(
         rgba(27, 9, 114, 0.85),
         rgba(55, 152, 73, 0.7));
-    background: linear-gradient(30deg, #fb4795d3, #ff984fc9);
+    background: -webkit-linear-gradient(
+        rgba(27, 9, 114, 0.85),
+        rgba(152, 55, 99, 0.7));
+    /* background: linear-gradient(30deg, #fb4795d3, #ff984fc9); */
+    /* background: linear-gradient(30deg, rgba(233, 29, 117, 0.85), rgba(194, 84, 5, 0.7)); */
+
 
     display: flex;
     flex-direction: column;
@@ -596,7 +610,7 @@
     }
 
     .service-box{
-        margin-top: 20px;
+       margin-top: 20px;
        width: 350px;
        flex-direction: column;
        align-items: center;
@@ -618,6 +632,9 @@
         max-width: 230px;
         list-style-type: none;
 
+    }
+    .div-1 .wrapper {
+       transform: rotate(1deg);
     }
 
     .stacking-services.div-1  li {

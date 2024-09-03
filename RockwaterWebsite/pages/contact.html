@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../Navbar.css" />
     <link rel="stylesheet" href="../Font-styling.css" />
     <link rel="stylesheet" href="../s8-footer-styling.css" />
-    <title>Rockwater - Contact Us</title>
+    <title>ROCKWATER - Contact Us</title>
     <style>
       /* -------------- BODY -------------- */
       body {
@@ -35,6 +35,13 @@
         filter: blur(3px) brightness(0.8);
         z-index: -1;
       }
+      @supports (-webkit-touch-callout: none) {
+        /* For iOS devices so it changes to scroll on Iphone*/
+        body::before {
+          background-attachment: scroll;
+        }
+      }
+
       .des-1 {
         position: absolute;
         top: 0;
@@ -113,6 +120,10 @@
         float: left;
         background-color: white;
         background: linear-gradient(30deg, #fb4795, #ff994f);
+        /* background: linear-gradient(30deg, #d147fb, #4fb0ff); */
+
+        /* background: rgb(182, 162, 255); */
+
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.01);
       }
       .right {
@@ -152,6 +163,10 @@
         border-radius: 50px;
       }
 
+      .contact-inputs::placeholder {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
       textarea {
         height: 100px !important;
         border-radius: 20px !important;
@@ -159,9 +174,6 @@
       }
       .contact-inputs:focus {
         border: 2.5px solid #ff994f;
-      }
-      .contact-inputs::placeholder {
-        color: #808080;
       }
       button {
         display: flex;
@@ -172,11 +184,12 @@
         gap: 10px;
         border: none;
         border-radius: 50px;
+        /* background: linear-gradient(to left, #d147fb, #4fb0ff); */
         background: linear-gradient(to left, #ff994f, #fb4795);
         cursor: pointer;
       }
       button:hover {
-        background: rgb(182, 162, 255);
+        background: rgb(171, 162, 255);
       }
 
       /* ___________________ RESPONSIVNESS _________________ */
@@ -207,7 +220,10 @@
     <nav id="navbar" class="navbar-class">
       <div class="nav-container">
         <div class="left-nav raleway-font">
-          <a href="../index.html">ROCKWATER</a>
+          <!-- <a href="../index.html">ROCKWATER</a> -->
+          <a href="index.html"
+            ><img src="../assets/icons/rockwater-logo-oldwhite.png" alt=""
+          /></a>
         </div>
         <div class="right-nav">
           <a class="raleway-font" href="../index.html">Home</a>
@@ -236,10 +252,10 @@
           <div class="general-inq">
             <h1>General Inquiries</h1>
             <p>
-              Tel: (709) 745-7625 | M-F 8AM-4:30PM<br />
+              Tel: (709) 745-7625 ext #1<br />
               Email: admin@rockwater.net<br />
-              Tel: (709) 745-7625 ext 110<br />
               Fax: (709) 745-8228<br />
+              Monday-Friday 8AM-5PM<br />
             </p>
           </div>
           <div class="service-repair">
@@ -250,8 +266,8 @@
             </p>
           </div>
           <div class="food-safety">
-            <h1>Food Safety Specialist Chemical Engineering Technology</h1>
-            <p>Tel: (709) 743-7898 <br />Email: jallison@rockwater.net</p>
+            <h1>Food Safety Specialist</h1>
+            <p>Email: jallison@rockwater.net</p>
           </div>
         </div>
         <form
@@ -259,17 +275,25 @@
           method="POST"
           class="right"
         >
+          <input type="hidden" name="from_name" value="Rockwater Website" />
+          <input
+            type="hidden"
+            name="subject"
+            value="Rockwater - Customer Message"
+          />
+
+          <!-- Rockwater  -->
           <input
             type="hidden"
             name="access_key"
-            value="336d7459-2190-4246-a1e2-53ad7ba10c4a"
+            value="d31ed942-2878-4b40-83f3-972b4684dc56"
           />
 
           <h1 class="form-title">Get in Touch!</h1>
           <hr />
           <input
             type="text"
-            name="name"
+            name="Customer name"
             placeholder="Your Name"
             class="contact-inputs"
             required
@@ -282,9 +306,10 @@
             required
           />
           <textarea
-            name="message"
+            name="Customer's message"
             placeholder="Your Message"
             class="contact-inputs"
+            required
           ></textarea>
           <button type="submit">Submit →</button>
         </form>

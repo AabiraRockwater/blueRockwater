@@ -13,12 +13,27 @@ header::before {
   width: 100%;
   height: 100%;
   background-image: url('assets/picture-backgrounds/spray-bottle-1.jpg');
-
   background-attachment: fixed;
   background-position: top;
   background-size: cover;
   z-index: -1;
   filter: brightness(0.8);
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* For iOS devices so it changes to scroll on Iphone*/
+  header::before {
+    background-attachment: scroll;
+  }
+}
+
+.buffer-fog {
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
+  min-height: 25vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: none;
 }
 
 .title-section {
@@ -36,13 +51,13 @@ header::before {
   overflow: hidden;
 }
 .title-text {
-  font-size: 80px;
+  font-size: 75px;
   font-weight: 700;
   margin: 0;
   margin-top: 15px;
   margin-bottom: 0px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.68);
-  letter-spacing: 10px;
+  letter-spacing: 20px;
   border-radius: 90px;
 
 }
@@ -63,29 +78,30 @@ span.w-color {
 .sub-2 {
   font-size: 26px;
   font-weight: 350;
-  letter-spacing: 3px;
   padding-top: 10px;
   color: rgb(255, 255, 255);
   /* color: rgb(61, 61, 61); */
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.785);
-  letter-spacing: 8px;
-
+  letter-spacing: 10px;
 }
 .title-logo {
   max-width: 150px;
   width: 150px;
-  /* height: 125px; */
+  height: 100px;
   width: 19vh;
   margin-top: 100px;
   filter: drop-shadow(0px 0px 5px black);
+  display: hide;
+  opacity: 0;
 }
 .learn-more-btn {
-  padding: 20px;
+  padding: 22px;
   min-width: 250px;
   background-color: rgb(97, 95, 219);
   border: 3px solid  rgb(97, 95, 219);
   margin: 40px;
   transition: all 0.3s ease;
+  z-index: 10;
   /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.505); */
   /* border-radius: 20px; */
   /* position: absolute;
@@ -239,7 +255,6 @@ a.learn-more-btn > button {
   .learn-more-btn {
     padding: 2vh;
     min-width: 10vw;
-    margin: 3vh;
   }
 }
 
@@ -324,13 +339,24 @@ a.learn-more-btn > button {
     width: 800px;
     height: 400px;
   }
+
   .learn-more-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 15px;
+    padding: 20px; 
+    padding-inline: 10px;
+    min-width: 250px;
+    width: 20px;
+    margin: 15px;
   }
+
+  .title-logo {
+    margin-top: 0px;
+  }
+ 
+
 }
 
 @media screen and (width < 600px) {
@@ -341,6 +367,19 @@ a.learn-more-btn > button {
   .des-2 {
     width: 800px;
     height: 400px;
+    display: none;
+  }
+  a.learn-more-btn > button {
+    font-size: 12px;
+  }
+  .learn-more-btn {
+    min-width: 200px;
+  }
+  .title-text {
+    letter-spacing: 15px;
+  }
+  .sub-2 {
+    letter-spacing: 8px;
   }
 }
 
@@ -349,5 +388,43 @@ a.learn-more-btn > button {
   .learn-more-btn {
     padding: 10px;
     min-width: 100px;
+  }
+
+  .title-text {
+    letter-spacing: 10px;
+  }
+  .sub-2 {
+    letter-spacing: 8px;
+  }
+}
+
+
+@media screen and (max-width: 500px) and (min-height: 650px) {
+  header {
+    min-height: 75vh;
+    max-height: 75vh;
+  }  
+
+  .title-section {
+    height: 75vh;
+    max-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-logo {
+    margin-top: 0px;
+    /* height: 50px; */
+  }
+  .buffer-fog {
+    display: block;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-height: 650px) {
+  .title-logo {
+    margin-top: 0px;
   }
 }

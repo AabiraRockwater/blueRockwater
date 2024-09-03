@@ -33,6 +33,11 @@ nav.navbar-class {
   font-size: large;
 }
 
+nav img {
+  margin-top: 10px;
+  max-height: 30px;
+}
+
 .left-nav > a:hover {
   color: rgb(186, 193, 249);
 }
@@ -120,4 +125,17 @@ nav.navbar-class {
     margin-inline: 0.6vw;
     padding-inline: 5vw;
   }
+}
+
+@media screen and (width < 600px) {
+  nav.navbar-class {
+    background: rgb(153, 163, 255);
+  }
+  .nav-container {
+    width: 100%;
+  }
+  nav img {
+    max-width: 30vw;
+  }
+  
 }

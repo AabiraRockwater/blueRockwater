@@ -1,3 +1,4 @@
+
 var mainCarousel = new Flickity(".carousel-nav", {
   cellAlign: "left",
   contain: true,
@@ -16,3 +17,5 @@ var navCarousel = new Flickity(".carousel-main", {
   wrapAround: true,
   groupCells: 1,
 });
+
+

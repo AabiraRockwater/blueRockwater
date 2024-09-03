@@ -69,7 +69,8 @@
 
 
 @media screen and (width < 900px) {
-  .buffer-section-picture {
+  .buffer-section-picture, 
+  .transparent-layer {
     display: none;
   }
 }

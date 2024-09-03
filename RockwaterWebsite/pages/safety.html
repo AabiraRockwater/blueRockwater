@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rockwater Safety Sheets</title>
+    <title>ROCKWATER Safety Sheets</title>
+    <!--  Social Media Icons  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -28,11 +29,19 @@
         height: 100%;
         background-color: aliceblue;
         background-image: url(../assets/picture-backgrounds/safety-background.png);
+        /* background-image: url(../assets/picture-backgrounds/spray-bottle-1.jpg); */
+
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
         filter: blur(2.5px) brightness(0.9);
         z-index: -1;
+      }
+      @supports (-webkit-touch-callout: none) {
+        /* For iOS devices so it changes to scroll on Iphone*/
+        body::before {
+          background-attachment: scroll;
+        }
       }
       /* -------------- BODY -------------- */
 
@@ -60,7 +69,7 @@
 
       /* -------------- Main -------------- */
       main {
-        margin-top: 50px;
+        margin-top: 80px;
         margin-bottom: 100px;
         width: 100%;
         display: flex;
@@ -71,7 +80,7 @@
       }
       main h1 {
         letter-spacing: 3px;
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 20px;
         margin: 10px;
         text-align: center;
@@ -79,7 +88,7 @@
       }
       /* --------------- search bar ------------------ */
       .search-wrapper {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -151,6 +160,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        min-height: 70vh;
       }
       .safety-sheet {
         background-color: white;
@@ -173,14 +183,9 @@
       .safety-btn {
         text-decoration: none;
         /* background-color: rgb(154, 134, 255); */
-        background-color: rgb(153, 163, 255);
-        background: -webkit-linear-gradient(
-          left,
-          rgba(682, 97, 231, 0.363),
-          rgba(153, 163, 255, 0.742)
-        );
-        background-color: rgb(82, 97, 231);
+        /* background-color: rgb(153, 163, 255); */
         background: linear-gradient(30deg, #fb4795, #ff994f);
+        /* background: linear-gradient(30deg, rgb(145, 145, 255), rgb(255, 118, 118)); */
 
         padding: 15px;
         border-radius: 50px;
@@ -193,11 +198,27 @@
       .safety-btn:hover {
         background-color: rgb(13, 19, 74);
         background: rgb(153, 163, 255);
+        /* background: linear-gradient(30deg, #fb4795, #ff994f); */
       }
       .hide {
         display: none;
       }
+      /* hr {
+        background-color: rgb(184, 184, 184);
+        padding: 0.2px;
+        width: 80%;
+        border: none;
+        margin-bottom: 50px;
+        box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.699);
+      } */
       /* --------------- Sheets Section ------------------ */
+      /* .footer-background {
+        background: -webkit-linear-gradient(
+          rgb(68, 14, 130),
+          rgba(164, 225, 149, 0.039)
+        );
+      } */
+      /* --------------- Footer Section ------------------ */
     </style>
   </head>
 
@@ -206,7 +227,10 @@
       <nav id="navbar" class="navbar-class">
         <div class="nav-container">
           <div class="left-nav raleway-font">
-            <a href="../index.html">ROCKWATER</a>
+            <!-- <a href="../index.html">ROCKWATER</a> -->
+            <a href="index.html"
+              ><img src="../assets/icons/rockwater-logo-oldwhite.png" alt=""
+            /></a>
           </div>
           <div class="right-nav">
             <a class="raleway-font" href="../index.html">Home</a>
@@ -235,6 +259,7 @@
           />
         </div>
       </div>
+      <hr />
       <div class="sheets">
         <div class="safety-sheet">
           <div class="sheet-name">Ato Quat</div>
@@ -552,7 +577,8 @@
         <div class="footer-1">
           <div class="footer-content">
             <div class="footer-contact">
-              <h1>Contact</h1>
+              <!-- <h1>Contact</h1> -->
+              <h1>Contact <i class="fa fa-phone" aria-hidden="true"></i></h1>
               <br />
               <p>
                 <b>Email:</b> &nbsp;<i

@@ -15,6 +15,8 @@
 .solutions-introduction {
   padding: 20px;
   padding-bottom: 0;
+  background-color: white;
+  z-index: 5;
 }
 
 
@@ -111,12 +113,15 @@
 
   background-size: cover;
   /* background-position: top; */
+  order: 2;
+
 }
 
 .card-2 {
   background: url(assets/picture-backgrounds/janitorial-equipment.png);
   background-size: cover;
   background-position: center;
+  order: 4;
 
 }
 
@@ -124,6 +129,7 @@
   background: url(assets/picture-backgrounds/Equipment.png);
   background-size: cover;
   /* background-position: top; */
+  order: 1;
 
 }
 
@@ -131,13 +137,16 @@
   background: url(assets/picture-backgrounds/Personal-Protective.png);
   background-size: cover;
   /* background-position: top; */
+  order: 6;
 
 }
 
 .card-5 {
-  background: url(assets/picture-backgrounds/fish-meat.png);
+  /* background: url(assets/picture-backgrounds/fish-meat.png); */
+  background: url(assets/picture-backgrounds/fish-plant.jpg);
   background-size: cover;
-  /* background-position: top; */
+  background-position: center;
+  order: 3;
 
 }
 
@@ -145,6 +154,7 @@
   background: url(assets/picture-backgrounds/Water-treatment.jpg);
   background-size: cover;
   /* background-position: top; */
+  order: 5;
 
 }
 
@@ -192,9 +202,9 @@
 }
 
 .solutions-background a:hover {
-  /* border: 2px solid rgb(176, 185, 255);
-  background-color: rgb(176, 185, 255); */
-  background: linear-gradient(30deg, #fb4795, #ff984f);
+  border: 2px solid rgb(176, 185, 255);
+  background-color: rgb(176, 185, 255);
+  /* background: linear-gradient(30deg, #fb4795, #ff984f); */
 
 }
 
@@ -382,6 +392,7 @@
     line-height: 20px;
     text-align: center;
   }
+
 }
 
 @media screen and (width < 900px) {
@@ -452,26 +463,32 @@
   
   .card-1 {
     background-position: center;
+    order: 2; 
   }
   
   .card-2 {
     background-position: center;
+    order: 4;
   }
   
   .card-3 {
     background-position: center;
+    order: 6;
   }
   
   .card-4 {
     background-position: center;
+    order: 5;
   }
   
   .card-5 {
     background-position: center;
+    order: 1;
   }
   
   .card-6 {
     background-position: center;
+    order: 3;
   }
   
   .solutions-background {
@@ -485,6 +502,7 @@
     font-size: 16px;
     margin: 10px;
     padding: 10px;
+    text-align: left;
   }
   
   .solutions-background div {
