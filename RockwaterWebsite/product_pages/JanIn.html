@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROCKWATER - Products</title>
     <!--  Social Media Icons  -->
     <link
       rel="stylesheet"
@@ -13,48 +12,24 @@
     <link rel="stylesheet" href="../Navbar.css" />
     <link rel="stylesheet" href="../Font-styling.css" />
     <link rel="stylesheet" href="../s8-footer-styling.css" />
-    <style>
-      body {
-        background-color: rgb(207, 196, 255);
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      h1.body {
-        font-size: 30px;
-        font-weight: 500;
-      }
-      p.body {
-        font-size: 20px;
-        font-weight: 400;
-      }
-      .message {
-        margin: 40px;
-        padding: 40px;
-        border-radius: 50px;
-        color: rgb(146, 110, 255);
-        background-color: rgb(255, 255, 255);
-      }
-    </style>
-  </head>
-  <body class="raleway-font">
+    <link rel="stylesheet" href="css-template.css" />
+
+    <title>ROCKWATER - Janitorial</title>
+  <body>
     <nav id="navbar" class="navbar-class">
       <div class="nav-container">
         <div class="left-nav raleway-font">
-          <!-- <a href="index.html">ROCKWATER</a> -->
-          <a href="index.html"
+          <a href="../index.html"
             ><img src="../assets/icons/rockwater-logo-oldwhite.png" alt=""
           /></a>
         </div>
         <div class="right-nav">
           <a class="raleway-font" href="../index.html">Home</a>
-          <a class="raleway-font" href="about.html">About</a>
-          <!-- <a class="raleway-font" href="#Divisions">Divisions</a> -->
+          <a class="raleway-font" href="../pages/about.html">About</a>
           <div class="dropdown">
             <a class="raleway-font dropdown-toggle" href="#">Divisions</a>
             <div class="dropdown-menu">
-              <a href="../product_pages/product_FoodNBeverage.html"
+              <a href="product_FoodNBeverage.html"
                 ><div
                   class="nav-img"
                   style="
@@ -63,7 +38,7 @@
                 ></div>
                 Food and Beverage</a
               >
-              <a href="../product_pages/foodService.html"
+              <a href="foodService.html"
                 ><div
                   class="nav-img"
                   style="
@@ -72,7 +47,7 @@
                 ></div>
                 Food Service</a
               >
-              <a href="../product_pages/waterTreatment.html"
+              <a href="waterTreatment.html"
                 ><div
                   class="nav-img"
                   style="
@@ -81,7 +56,7 @@
                 ></div>
                 Water Treatment</a
               >
-              <a href="../product_pages/JanIn.html"
+              <a href="JanIn.html"
                 ><div
                   class="nav-img"
                   style="
@@ -90,7 +65,7 @@
                 ></div>
                 Janitorial and Institutional</a
               >
-              <a href="../product_pages/PPE.html"
+              <a href="PPE.html"
                 ><div
                   class="nav-img"
                   style="
@@ -99,7 +74,7 @@
                 ></div>
                 Personal Protective Equipment</a
               >
-              <a href="../product_pages/equipment.html"
+              <a href="equipment.html"
                 ><div
                   class="nav-img"
                   style="
@@ -110,53 +85,14 @@
               >
             </div>
           </div>
-          <a class="raleway-font" href="products.html">Products</a>
-          <a class="raleway-font" href="safety.html">Safety</a>
-          <a class="raleway-font" href="contact.html">Contact</a>
+          <a class="raleway-font" href="../pages/products.html">Products</a>
+          <a class="raleway-font" href="../pages/safety.html">Safety</a>
+          <a class="raleway-font" href="../pages/contact.html">Contact</a>
         </div>
         <div class="icon" onclick="toggleMenu()">&#9776;</div>
       </div>
     </nav>
-    <div class="message">
-      <h1 class="body">We're currently updating our product list.</h1>
-      <p class="body">
-        <br />For product details, please contact us. Send us a message
-        <a href="contact.html">here</a> or use the contact info below!
-      </p>
-
-      <div class="footer-contact">
-        <br />
-        <p>
-          <b>Email:</b> &nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
-          admin@rockwater.net
-        </p>
-        <p>
-          <b>Phone:</b> &nbsp;<i class="fa fa-phone" aria-hidden="true"></i>
-          709-745-7625
-        </p>
-        <p>
-          <b>Socials:</b>&nbsp;
-          <a
-            href="https://www.instagram.com/rockwater_professionalproducts/"
-            class="insta"
-            target="_blank"
-          >
-            <i class="fa fa-instagram"></i> Instagram</a
-          >
-          &nbsp;|&nbsp;
-          <a
-            href="https://www.facebook.com/ROCKWATERPP"
-            class="facebook"
-            target="_blank"
-          >
-            <i class="fa fa-facebook"></i> Facebook</a
-          >
-        </p>
-      </div>
-    </div>
     <script src="../Navbar.js"></script>
+    
   </body>
 </html>
-
-<!-- Make background of body white and make Navbar background blue
-It is supposed to be like the caliber website. -->
