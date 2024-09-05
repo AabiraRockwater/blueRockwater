@@ -17,7 +17,7 @@
     <title>Food and Beverage</title>
     <style>
       /* -------------------------- Navbar -------------------------- */
-      nav {
+      /* nav {
         background-color: rgb(171, 152, 255);
         min-height: 70px;
         background-color: white;
@@ -41,7 +41,7 @@
       }
       .navbar-class .icon {
         color: rgb(0, 0, 0);
-      }
+      } */
       /* -------------------------- Navbar -------------------------- */
       /*---------------- safety --------------- */
       .ending {
@@ -85,15 +85,24 @@
         font-size: 15px;
         font-weight: bold;
         letter-spacing: 2px;
+        border-radius: 40px;
+        border: none;
+      }
+      a {
+        text-decoration: none;
       }
       .ending button:hover {
         background-color: rgb(188, 139, 255);
         color: white;
       }
 
+      .product img {
+        max-width: 120px;
+      }
+
       /*---------------- safety --------------- */
 
-      @media screen and (width < 1280px) {
+      /* @media screen and (width < 1280px) {
         .safety-sheet,
         .free-del {
           width: 80vw;
@@ -108,7 +117,7 @@
         .ending button {
           font-size: 2.5vw;
         }
-      }
+      } */
 
       /* ------------------------------------------------------------------------- */
     </style>
@@ -201,29 +210,11 @@
       <br />
     </div>
     <main>
-      <div class="left-list">
-        <div class="column-list">
-          <h2>Categories</h2>
-          <hr class="cat-hr" />
-          <a href="">Chemical Listings</a>
-          <hr />
-          <a href="">Paper Towel and Bathroom Tissue</a>
-          <hr />
-          <a href="">Hand Hygiene with Deb</a>
-          <hr />
-          <a href="">Squeegees, Brooms, Brushes, Shovels etc</a>
-          <hr />
-          <a href="">Grease Trap Solution</a>
-          <hr />
-          <a href="">Eco Pro Garbage Bags</a>
-        </div>
-      </div>
-
       <div class="product-list">
         <!--  -->
         <div class="product chemical-listing">
           <div class="img-container">
-            <a class="img-border" href="#">
+            <a class="img-border">
               <img
                 src="../assets/product-pictures/bluedrum200x200.png"
                 alt=""
@@ -234,13 +225,19 @@
             <h3 class="title-section">Chemical Listings</h3>
             <div class="text-section">
               <p>
-                From kitchen to processing plants our chemical products maintain
-                the highest standard of sanitzation.
+                We offer Hundreds of chemical products that maintain the highest
+                standards of cleaning and sanitation, from the kitchen to the
+                processing plant. Rockwater makes food service smooth and
+                simple.
               </p>
             </div>
             <div class="button-section">
-              <a href=""><button>Chemical Listings</button></a>
-              <a href=""><button>Brewery Chemicals</button></a>
+              <a href="#">Chemical Listing<button>▶</button></a>
+              <a
+                target="_blank"
+                href="../assets/data/Brewery-Chemicals-Brochure-July-16-21.pdf"
+                >Brewery Chemicals<button>▶</button></a
+              >
             </div>
           </div>
         </div>
@@ -248,7 +245,7 @@
         <!--  -->
         <div class="product Paper-towel">
           <div class="img-container">
-            <a class="img-border" href="#">
+            <a class="img-border">
               <img src="../assets/product-pictures/kctowel200x200.png" alt="" />
             </a>
           </div>
@@ -256,13 +253,15 @@
             <h3 class="title-section">Paper Towel and Bathroom Tissue</h3>
             <div class="text-section">
               <p>
-                Proud partner Kimberly-Clark towel rolls and washroom tissue.
-                Dispensers are professionally installed (installation applies to
-                in-town customers).
+                Proud partner Kimberly-Clark supply high quality roll towel and
+                washroom tissue for your high-capacity restroom needs.
+                Dispensers are professionally installed, making upgrading
+                current facilities hassle-free! (installation applies to in-town
+                customers)
               </p>
             </div>
             <div class="button-section">
-              <a href=""><button>Kimberly-Clark Products</button></a>
+              <a href="#">Kimberly-Clark Products<button>▶</button></a>
             </div>
           </div>
         </div>
@@ -270,7 +269,7 @@
         <!--  -->
         <div class="product Hand-hygiene-w-Deb">
           <div class="img-container">
-            <a class="img-border" href="#">
+            <a class="img-border">
               <img
                 src="../assets/product-pictures/debdispenser200x200.png"
                 alt=""
@@ -281,14 +280,16 @@
             <h3 class="title-section">Hand Hygiene with Deb</h3>
             <div class="text-section">
               <p>
-                Rockwater offers a full range of Deb Hand Hygiene products. We
-                also provide skin care consultation for all types of workplace
-                and public environments. Complimentary dispensers and
-                professional installation also available.
+                Rockwater carries a complete line of Deb Hand Hygiene products,
+                the world’s leading skin care company. Rockwater provides skin
+                care consultation for all types of workplace and public
+                environments, commercial, healthcare and food sectors.
+                Complimentary dispensers and professional installation make
+                upgrading current facilities hassle-free!
               </p>
             </div>
             <div class="button-section">
-              <a href=""><button>Deb Products</button></a>
+              <a href="#">Deb Products<button>▶</button></a>
             </div>
           </div>
         </div>
@@ -296,7 +297,7 @@
         <!--  -->
         <div class="product Remco">
           <div class="img-container">
-            <a href="#" class="img-border">
+            <a class="img-border">
               <img src="../assets/product-pictures/Remco216x200.png" alt="" />
             </a>
           </div>
@@ -306,13 +307,16 @@
             </h3>
             <div class="text-section">
               <p>
-                Remco products are high-quality, color-coded tools designed for
-                hygienic environments. Known for their durability, they boost
-                productivity and streamline workplace cleanup.
+                Our Remco products are top quality colour-coded tools for use in
+                environments where hygiene and efficiency are essential. Renoun
+                for their durability, Remco products will increase worker
+                production and effectively organize workplace cleanup.
               </p>
             </div>
             <div class="button-section">
-              <a href=""><button>Remco Products</button></a>
+              <a target="_blank" href="http://products.remcoproducts.com/"
+                >Remco Products<button>▶</button></a
+              >
             </div>
           </div>
         </div>
@@ -320,7 +324,7 @@
         <!--  -->
         <div class="product Remco">
           <div class="img-container">
-            <a href="#" class="img-border">
+            <a class="img-border">
               <img
                 src="../assets/product-pictures/liquibac154x200.png"
                 alt=""
@@ -335,11 +339,14 @@
                 maintaining drain lines, grease traps, odor control, septic and
                 waste treatment. Rockwater also provides worry-free timed
                 dispensors that will automatically dispense the chemical based
-                on each customers individual needs for maximum efficiency.
+                on each customers individual needs for maximum efficiency. Learn
+                more about Liqui-Bac Plus.
               </p>
             </div>
             <div class="button-section">
-              <a href=""><button>Liqui-Bac Plus</button></a>
+              <a href="../assets/data/liqui-bac-plus.pdf"
+                >Liqui-Bac Plus<button>▶</button></a
+              >
             </div>
           </div>
         </div>
@@ -347,7 +354,7 @@
         <!--  -->
         <div class="product Bags">
           <div class="img-container">
-            <a href="#" class="img-border">
+            <a class="img-border">
               <img src="../assets/product-pictures/bags201x200.png" alt="" />
             </a>
           </div>
@@ -361,7 +368,7 @@
               </p>
             </div>
             <div class="button-section">
-              <a href=""><button>Eco Pro Garbage Bags</button></a>
+              <a href="#">Eco Pro Garbage Bags<button>▶</button></a>
             </div>
           </div>
         </div>
@@ -456,22 +463,8 @@
             ></iframe>
           </div>
           <div class="copyright-attributions">
-            <a class="copyright" href="#"
+            <a class="copyright"
               >Copyright &copy; 2024 RockWater. All Rights Reserved.</a
-            >
-            <br />
-            <a href="#">Attributions:</a>
-            <a
-              href="https://www.flaticon.com/free-icons/leaf"
-              title="leaf icons"
-              >Leaf icons created by Pixel perfect - Flaticon</a
-            >
-            <a href="https://thenounproject.com/icon/chemical-1792984/">
-              Chemical Icon Created by Adrien Coquet from Noun Project</a
-            >
-            <a
-              href="https://pngtree.com/freepng/circle-phone-call-icon-in-black-color_8997757.html"
-              >png image from pngtree.com/</a
             >
           </div>
         </div>

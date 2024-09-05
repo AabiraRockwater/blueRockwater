@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROCKWATER - Products</title>
     <!--  Social Media Icons  -->
     <link
       rel="stylesheet"
@@ -13,32 +12,124 @@
     <link rel="stylesheet" href="../Navbar.css" />
     <link rel="stylesheet" href="../Font-styling.css" />
     <link rel="stylesheet" href="../s8-footer-styling.css" />
+
+    <title>Rockwater - Personal Protective Equipment</title>
     <style>
+      /* -------------------------- Navbar -------------------------- */
+      nav {
+        background-color: rgb(171, 152, 255);
+        min-height: 70px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.249);
+      }
+      .nav-container {
+        width: 95%;
+      }
+      .right-nav > a {
+        color: rgb(0, 0, 0);
+      }
+      .dropdown .dropdown-toggle {
+        color: rgb(0, 0, 0);
+      }
+      nav img {
+        filter: invert(1);
+      }
+      .right-nav > a:hover {
+        border-right: 2px solid rgb(160, 101, 255);
+        border-left: 2px solid rgb(160, 101, 255);
+      }
+      .navbar-class .icon {
+        color: rgb(0, 0, 0);
+      }
+      /* -------------------------- Navbar -------------------------- */
+
       body {
-        background-color: rgb(207, 196, 255);
-        height: 100vh;
+        background: linear-gradient(
+            to right,
+            rgb(87, 9, 177),
+            rgba(159, 17, 95, 0.591)
+          ),
+          url(../assets/picture-backgrounds/rocks-background-1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      .title {
+        margin: 50px;
+        margin-top: 130px;
+        height: 150px;
+        padding: 10px;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        color: white;
+      }
+      .title h1 {
+        margin-bottom: 5px;
+      }
+      main {
+        padding: 100px;
+        padding-inline: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        background-color: rgb(240, 240, 240);
+        background-color: rgb(237, 231, 240);
+        background-color: white;
+        position: relative;
+      }
+      .product-list {
+        max-width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .product-list div {
+        background: linear-gradient(
+          30deg,
+          rgb(135, 98, 255),
+          rgb(185, 167, 246)
+        );
+        border: 3px solid white;
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        padding: 20px;
+        width: 180px;
+        height: 70px;
+        margin: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
       }
-      h1.body {
-        font-size: 30px;
-        font-weight: 500;
+
+      .product-list div:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(135, 98, 255);
+        border: 3px solid rgb(135, 98, 255);
       }
-      p.body {
-        font-size: 20px;
-        font-weight: 400;
-      }
-      .message {
-        margin: 40px;
-        padding: 40px;
-        border-radius: 50px;
-        color: rgb(146, 110, 255);
-        background-color: rgb(255, 255, 255);
+
+      @media screen and (width < 650px) {
+        main {
+          padding: 50px;
+          padding-inline: 0px;
+        }
+        .product-list div {
+          padding: 20px;
+          width: 30vw;
+          height: 70px;
+          justify-content: space-around;
+        }
       }
     </style>
   </head>
   <body class="raleway-font">
+    <!-- Navbar -->
     <nav id="navbar" class="navbar-class">
       <div class="nav-container">
         <div class="left-nav raleway-font">
@@ -50,7 +141,6 @@
         <div class="right-nav">
           <a class="raleway-font" href="../index.html">Home</a>
           <a class="raleway-font" href="about.html">About</a>
-          <!-- <a class="raleway-font" href="#Divisions">Divisions</a> -->
           <div class="dropdown">
             <a class="raleway-font dropdown-toggle" href="#">Divisions</a>
             <div class="dropdown-menu">
@@ -117,46 +207,121 @@
         <div class="icon" onclick="toggleMenu()">&#9776;</div>
       </div>
     </nav>
-    <div class="message">
-      <h1 class="body">We're currently updating our product list.</h1>
-      <p class="body">
-        <br />For product details, please contact us. Send us a message
-        <a href="contact.html">here</a> or use the contact info below!
-      </p>
 
-      <div class="footer-contact">
-        <br />
-        <p>
-          <b>Email:</b> &nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
-          admin@rockwater.net
-        </p>
-        <p>
-          <b>Phone:</b> &nbsp;<i class="fa fa-phone" aria-hidden="true"></i>
-          709-745-7625
-        </p>
-        <p>
-          <b>Socials:</b>&nbsp;
-          <a
-            href="https://www.instagram.com/rockwater_professionalproducts/"
-            class="insta"
-            target="_blank"
-          >
-            <i class="fa fa-instagram"></i> Instagram</a
-          >
-          &nbsp;|&nbsp;
-          <a
-            href="https://www.facebook.com/ROCKWATERPP"
-            class="facebook"
-            target="_blank"
-          >
-            <i class="fa fa-facebook"></i> Facebook</a
-          >
-        </p>
-      </div>
+    <div class="title">
+      <h1>Product List</h1>
+      <p>Find out about our extensive range of Products</p>
+      <br />
     </div>
+    <main>
+      <div class="product-list">
+        <div><h3>Aerosols</h3></div>
+        <div><h3>Air Care</h3></div>
+        <div><h3>Bathroom Cleaners</h3></div>
+        <div><h3>Carpet Care</h3></div>
+        <div><h3>Chemical Dispensing Systems</h3></div>
+        <div><h3>Dish Soap</h3></div>
+        <div><h3>Floor Care</h3></div>
+        <div><h3>Floor Pads</h3></div>
+        <div><h3>Garbage Bags</h3></div>
+        <div><h3>Green Cleaning</h3></div>
+        <div><h3>Handd Hygiene</h3></div>
+        <div><h3>Hard Surfacce Cleaners</h3></div>
+      </div>
+    </main>
+
+    <!---------------------------- FOOTER SECTION ---------------------------->
+    <footer class="raleway-font" id="footer">
+      <div class="footer-background">
+        <div class="space"></div>
+        <div class="footer-1">
+          <div class="footer-content">
+            <div class="footer-contact">
+              <h1>Contact <i class="fa fa-phone" aria-hidden="true"></i></h1>
+              <br />
+              <p>
+                <b>Email:</b> &nbsp;<i
+                  class="fa fa-envelope"
+                  aria-hidden="true"
+                ></i>
+                admin@rockwater.net
+              </p>
+              <p>
+                <b>Phone:</b> &nbsp;<i
+                  class="fa fa-phone"
+                  aria-hidden="true"
+                ></i>
+                709-745-7625
+              </p>
+              <p>
+                <b>Socials:</b>&nbsp;
+                <a
+                  href="https://www.instagram.com/rockwater_professionalproducts/"
+                  class="insta"
+                  target="_blank"
+                >
+                  <i class="fa fa-instagram"></i> Instagram</a
+                >
+                &nbsp;|&nbsp;
+                <a
+                  href="https://www.facebook.com/ROCKWATERPP"
+                  class="facebook"
+                  target="_blank"
+                >
+                  <i class="fa fa-facebook"></i> Facebook</a
+                >
+              </p>
+            </div>
+
+            <div class="footer-address">
+              <h1>
+                Address <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </h1>
+              <br />
+              <p>5 Panther Place,</p>
+              <p>Mount Pearl, NL,</p>
+              <p>Canada</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-2">
+          <h1>Find Us!</h1>
+          <div class="iframe-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10776.469873332308!2d-52.828594999999986!3d47.52657599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0cbb5e15e29641%3A0x78565e1f88392aa3!2sROCKWATER%20Professional%20Products!5e0!3m2!1sen!2sus!4v1722348248208!5m2!1sen!2sus"
+              width="700"
+              height="299"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="copyright-attributions">
+            <a class="copyright" href="#"
+              >Copyright &copy; 2024 RockWater. All Rights Reserved.</a
+            >
+            <br />
+            <a href="#">Attributions:</a>
+            <a
+              href="https://www.flaticon.com/free-icons/leaf"
+              title="leaf icons"
+              >Leaf icons created by Pixel perfect - Flaticon</a
+            >
+            <a href="https://thenounproject.com/icon/chemical-1792984/">
+              Chemical Icon Created by Adrien Coquet from Noun Project</a
+            >
+            <a
+              href="https://pngtree.com/freepng/circle-phone-call-icon-in-black-color_8997757.html"
+              >png image from pngtree.com/</a
+            >
+          </div>
+        </div>
+        <div class="space"></div>
+      </div>
+    </footer>
+    <!---------------------------- FOOTER SECTION ---------------------------->
+
     <script src="../Navbar.js"></script>
   </body>
 </html>
-
-<!-- Make background of body white and make Navbar background blue
-It is supposed to be like the caliber website. -->

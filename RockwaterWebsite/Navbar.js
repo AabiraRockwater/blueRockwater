@@ -29,8 +29,8 @@ window.addEventListener("scroll", function () {
           link.style.color = "black"; // Maintain red color
         });
         if (
-          pathname.includes("product_FoodNBeverage.html") ||
-          pathname.includes("PPE.html")
+          pathname.includes("product_pages") ||
+          pathname.includes("products.html")
         ) {
           navbar.style.background = "white";
           leftNavLinks.forEach(function (link) {
@@ -61,8 +61,8 @@ window.addEventListener("scroll", function () {
           link.style.color = "black"; // Maintain red color
         });
         if (
-          pathname.includes("product_FoodNBeverage.html") ||
-          pathname.includes("PPE.html")
+          pathname.includes("product_pages") ||
+          pathname.includes("products.html")
         ) {
           navbar.style.background = "white";
           leftNavLinks.forEach(function (link) {
@@ -84,8 +84,8 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.style.background = "rgb(153, 163, 255)";
     if (
-      pathname.includes("product_FoodNBeverage.html") ||
-      pathname.includes("PPE.html")
+      pathname.includes("product_pages") ||
+      pathname.includes("products.html")
     ) {
       navbar.style.background = "white";
       leftNavLinks.forEach(function (link) {
