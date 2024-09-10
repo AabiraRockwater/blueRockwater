@@ -8,6 +8,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/rockwater-logo-nobackground.png"
+    />
+    
     <link rel="stylesheet" href="../Everything.css" />
     <link rel="stylesheet" href="../Navbar.css" />
     <link rel="stylesheet" href="../Font-styling.css" />
@@ -100,9 +108,13 @@
         max-width: 120px;
       }
 
+      .green-cleaning img {
+        max-width: 160px;
+        clip-path: circle(50% at 50% 50%);
+      }
       /*---------------- safety --------------- */
 
-      /* @media screen and (width < 1280px) {
+      @media screen and (width < 1280px) {
         .safety-sheet,
         .free-del {
           width: 80vw;
@@ -117,7 +129,7 @@
         .ending button {
           font-size: 2.5vw;
         }
-      } */
+      }
 
       /* ------------------------------------------------------------------------- */
     </style>
@@ -136,8 +148,10 @@
           <a class="raleway-font" href="../pages/about.html">About</a>
           <!-- <a class="raleway-font" href="#Divisions">Divisions</a> -->
           <div class="dropdown">
-            <a class="raleway-font dropdown-toggle" href="#">Divisions</a>
-            <div class="dropdown-menu">
+            <a class="raleway-font dropdown-toggle" onclick="myFunction()"
+              >Divisions</a
+            >
+            <div class="dropdown-menu" id="myDropdown">
               <a href="product_FoodNBeverage.html"
                 ><div
                   class="nav-img"
@@ -232,11 +246,40 @@
               </p>
             </div>
             <div class="button-section">
-              <a href="#">Chemical Listing<button>▶</button></a>
+              <a href="Chemical_Listing.html"
+                >Chemical Listing<button>▶</button></a
+              >
               <a
                 target="_blank"
                 href="../assets/data/Brewery-Chemicals-Brochure-July-16-21.pdf"
                 >Brewery Chemicals<button>▶</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="product green-cleaning">
+          <div class="img-container">
+            <a class="img-border">
+              <img src="../assets/product-pictures/green-cleaning.jpg" alt="" />
+            </a>
+          </div>
+          <div class="text-container">
+            <h3 class="title-section">
+              Eco-preferred - Environmentally Friendly Chemicals
+            </h3>
+            <div class="text-section">
+              <p>
+                The complete line of Eco Select products provide a cost
+                effective means to maintain facility cleanliness while being
+                environmentally friendly. We have a product for every cleaning
+                need.
+              </p>
+            </div>
+            <div class="button-section">
+              <a href="Chemical_Listing.html"
+                >Green Cleaning Products<button>▶</button></a
               >
             </div>
           </div>
@@ -261,7 +304,9 @@
               </p>
             </div>
             <div class="button-section">
-              <a href="#">Kimberly-Clark Products<button>▶</button></a>
+              <a href="../product_pages/Kimberly-clark.html"
+                >Kimberly-Clark Products<button>▶</button></a
+              >
             </div>
           </div>
         </div>
@@ -289,7 +334,7 @@
               </p>
             </div>
             <div class="button-section">
-              <a href="#">Deb Products<button>▶</button></a>
+              <a href="Hand_hygiene.html">Deb Products<button>▶</button></a>
             </div>
           </div>
         </div>
@@ -314,7 +359,7 @@
               </p>
             </div>
             <div class="button-section">
-              <a target="_blank" href="http://products.remcoproducts.com/"
+              <a target="_blank" href="https://remcoproducts.com/us"
                 >Remco Products<button>▶</button></a
               >
             </div>
@@ -344,7 +389,7 @@
               </p>
             </div>
             <div class="button-section">
-              <a href="../assets/data/liqui-bac-plus.pdf"
+              <a target="_blank" href="../assets/data/liqui-bac-plus.pdf"
                 >Liqui-Bac Plus<button>▶</button></a
               >
             </div>
@@ -368,7 +413,9 @@
               </p>
             </div>
             <div class="button-section">
-              <a href="#">Eco Pro Garbage Bags<button>▶</button></a>
+              <a href="Garbage_bags.html"
+                >Eco Pro Garbage Bags<button>▶</button></a
+              >
             </div>
           </div>
         </div>

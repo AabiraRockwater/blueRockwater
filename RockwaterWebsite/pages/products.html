@@ -8,6 +8,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/rockwater-logo-nobackground.png"
+    />
+
     <link rel="stylesheet" href="../Everything.css" />
     <link rel="stylesheet" href="../Navbar.css" />
     <link rel="stylesheet" href="../Font-styling.css" />
@@ -63,41 +71,61 @@
 
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         justify-content: center;
-
         color: white;
       }
+
       .title h1 {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
       }
+
       main {
         padding: 100px;
         padding-inline: 50px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: rgb(240, 240, 240);
         background-color: rgb(237, 231, 240);
         background-color: white;
         position: relative;
       }
+
+      .main-title {
+        text-align: center;
+        margin-bottom: 50px;
+        color: rgb(56, 26, 104);
+        text-transform: uppercase;
+        /* font-variant: small-caps; */
+        letter-spacing: 2px;
+      }
+
+      .main-title h1 {
+        margin: 5px;
+      }
+
+      .main-title p {
+        display: none;
+      }
+
       .product-list {
         max-width: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
       }
-      .product-list div {
+      .product-list a {
         background: linear-gradient(
           30deg,
-          rgb(135, 98, 255),
+          rgb(119, 98, 255),
           rgb(185, 167, 246)
         );
-        border: 3px solid white;
         color: rgb(255, 255, 255);
+        text-decoration: none;
         border-radius: 20px;
+        border: 5px solid white;
         padding: 20px;
         width: 180px;
         height: 70px;
@@ -108,10 +136,10 @@
         text-align: center;
       }
 
-      .product-list div:hover {
+      .product-list a:hover {
         background: rgb(255, 255, 255);
         color: rgb(135, 98, 255);
-        border: 3px solid rgb(135, 98, 255);
+        border: 5px solid rgb(135, 98, 255);
       }
 
       @media screen and (width < 650px) {
@@ -119,7 +147,7 @@
           padding: 50px;
           padding-inline: 0px;
         }
-        .product-list div {
+        .product-list a {
           padding: 20px;
           width: 30vw;
           height: 70px;
@@ -142,8 +170,10 @@
           <a class="raleway-font" href="../index.html">Home</a>
           <a class="raleway-font" href="about.html">About</a>
           <div class="dropdown">
-            <a class="raleway-font dropdown-toggle" href="#">Divisions</a>
-            <div class="dropdown-menu">
+            <a class="raleway-font dropdown-toggle" onclick="myFunction()"
+              >Divisions</a
+            >
+            <div class="dropdown-menu" id="myDropdown">
               <a href="../product_pages/product_FoodNBeverage.html"
                 ><div
                   class="nav-img"
@@ -209,24 +239,37 @@
     </nav>
 
     <div class="title">
-      <h1>Product List</h1>
-      <p>Find out about our extensive range of Products</p>
-      <br />
+      <h1>Rockwater Products</h1>
+      <p>
+        Find out about our extensive range of Cleaning and Sanitation equipments
+        and products
+      </p>
     </div>
     <main>
+      <div class="main-title">
+        <h1>Product List</h1>
+        <p>Click a category to so see the products</p>
+      </div>
+
       <div class="product-list">
-        <div><h3>Aerosols</h3></div>
-        <div><h3>Air Care</h3></div>
-        <div><h3>Bathroom Cleaners</h3></div>
-        <div><h3>Carpet Care</h3></div>
-        <div><h3>Chemical Dispensing Systems</h3></div>
-        <div><h3>Dish Soap</h3></div>
-        <div><h3>Floor Care</h3></div>
-        <div><h3>Floor Pads</h3></div>
-        <div><h3>Garbage Bags</h3></div>
-        <div><h3>Green Cleaning</h3></div>
-        <div><h3>Handd Hygiene</h3></div>
-        <div><h3>Hard Surfacce Cleaners</h3></div>
+        <a href="../product_pages/Aerosols.html"><h3>Aerosols</h3></a>
+        <a href="../product_pages/Air_Care.html"><h3>Air Care</h3></a>
+        <a href="../product_pages/Bathroom_cleaners.html"
+          ><h3>Bathroom Cleaners</h3></a
+        >
+        <a href="../product_pages/Carpet_care.html"><h3>Carpet Care</h3></a>
+        <a href="../product_pages/CDS.html"
+          ><h3>Chemical Dispensing Systems</h3></a
+        >
+        <a href="../product_pages/Dish_soap.html"><h3>Dish Soap</h3></a>
+        <a href="../product_pages/Floor_care.html"><h3>Floor Care</h3></a>
+        <a href="../product_pages/Floor_pads.html"><h3>Floor Pads</h3></a>
+        <a href="../product_pages/Garbage_bags.html"><h3>Garbage Bags</h3></a>
+        <a href="../product_pages/Green_cleaning.html"
+          ><h3>Green Cleaning</h3></a
+        >
+        <a href="../product_pages/Hand_hygiene.html"><h3>Hand Hygiene</h3></a>
+        <a href="../product_pages/HSC.html"><h3>Hard Surfacce Cleaners</h3></a>
       </div>
     </main>
 

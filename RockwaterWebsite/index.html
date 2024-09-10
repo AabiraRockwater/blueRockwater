@@ -83,6 +83,9 @@
         font-weight: 400;
         font-style: normal;
       }
+      .hide-button {
+        display: none;
+      }
 
       /* ------------- FONTS STYLING ------------- */
 
@@ -132,10 +135,11 @@
           <div class="right-nav">
             <a class="raleway-font" href="index.html">Home</a>
             <a class="raleway-font" href="pages/about.html">About</a>
-            <!-- <a class="raleway-font" href="#Divisions">Divisions</a> -->
             <div class="dropdown">
-              <a class="raleway-font dropdown-toggle" href="#">Divisions</a>
-              <div class="dropdown-menu">
+              <a class="raleway-font dropdown-toggle" onclick="myFunction()"
+                >Divisions</a
+              >
+              <div class="dropdown-menu" id="myDropdown">
                 <a href="product_pages/product_FoodNBeverage.html"
                   ><div
                     class="nav-img"
@@ -268,9 +272,16 @@
         <div class="solutions-cards-container">
           <div class="solutions-cards card-1">
             <div class="solutions-background">
-              <h1 class="new-solutions-text raleway-font">Food Service</h1>
+              <h1
+                style="padding-bottom: 50px"
+                class="new-solutions-text raleway-font"
+              >
+                Food Service
+              </h1>
               <div>
-                <a href="#"><i class="arrow-right"></i></a>
+                <a href="#" style="display: none"
+                  ><i class="arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -280,15 +291,24 @@
                 Janitorial and Institutional
               </h1>
               <div>
-                <a href="#"><i class="arrow-right"></i></a>
+                <a href="product_pages/JanIn.html"
+                  ><i class="arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
           <div class="solutions-cards card-6">
             <div class="solutions-background">
-              <h1 class="new-solutions-text raleway-font">Water Treatment</h1>
+              <h1
+                style="padding-bottom: 50px"
+                class="new-solutions-text raleway-font"
+              >
+                Water Treatment
+              </h1>
               <div>
-                <a href="#"><i class="arrow-right"></i></a>
+                <a href="#" style="display: none"
+                  ><i class="arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -316,7 +336,9 @@
             <div class="solutions-background">
               <h1 class="new-solutions-text raleway-font">Equipment</h1>
               <div>
-                <a href="#"><i class="arrow-right"></i></a>
+                <a href="product_pages/equipment.html"
+                  ><i class="arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -416,7 +438,7 @@
       <section class="buffer-section-picture"></section>
 
       <!---------------------------- SECTION SIX ---------------------------->
-      <section class="section-6-linked-carousels sticky">
+      <section class="section-6-linked-carousels sticky" style="display: none">
         <div class="lc-left-div">
           <h1 class="lc-title raleway-font">
             Innovative<br />Solutions<br />For
@@ -472,14 +494,13 @@
       </section>
       <!---------------------------- SECTION SIX ---------------------------->
 
-      <section class="transparent-layer sticky"></section>
+      <section style="display: none" class="transparent-layer sticky"></section>
 
       <!---------------------------- SECTION SEVEN ---------------------------->
       <section class="stacking-cards sticky raleway-font">
         <div class="left-div">
-          <div class="top-div"></div>
           <div class="bottom-div">
-            <p>That <br />Work</p>
+            <p>Innovative<br />Solutions<br />That <br />Work</p>
           </div>
         </div>
         <div class="right-div">

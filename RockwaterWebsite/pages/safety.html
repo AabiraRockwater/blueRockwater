@@ -9,6 +9,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/rockwater-logo-nobackground.png"
+    />
+
     <link rel="stylesheet" href="../Everything.css" />
     <link rel="stylesheet" href="../Navbar.css" />
     <link rel="stylesheet" href="../Font-styling.css" />
@@ -235,10 +243,11 @@
           <div class="right-nav">
             <a class="raleway-font" href="../index.html">Home</a>
             <a class="raleway-font" href="about.html">About</a>
-            <!-- <a class="raleway-font" href="#Divisions">Divisions</a> -->
             <div class="dropdown">
-              <a class="raleway-font dropdown-toggle" href="#">Divisions</a>
-              <div class="dropdown-menu">
+              <a class="raleway-font dropdown-toggle" onclick="myFunction()"
+                >Divisions</a
+              >
+              <div class="dropdown-menu" id="myDropdown">
                 <a href="../product_pages/product_FoodNBeverage.html"
                   ><div
                     class="nav-img"

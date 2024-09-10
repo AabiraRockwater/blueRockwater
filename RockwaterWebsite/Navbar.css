@@ -84,8 +84,15 @@ nav img {
 
 .dropdown .dropdown-toggle {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
+
+.dropdown .dropdown-toggle:hover {
+  text-decoration: none;
+  color: rgb(197, 209, 255);
+  cursor: pointer;
+}
+
 
 .dropdown .dropdown-toggle::after {
   content: " ▼"; 
@@ -94,9 +101,12 @@ nav img {
 
 }
 
+
 .dropdown-menu {
   display: none;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* This centers the menu */
   background-color: white;
   min-width: 35vw;
   max-height: 75vh;
@@ -122,14 +132,13 @@ nav img {
 
 .dropdown-menu a:hover {
   background-color: rgba(209, 193, 255, 0.58);
-  /* color: white; */
   border-radius: 5px;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-menu {
+/* .dropdown:hover .dropdown-menu {
   display: block;
-}
+} */
 
 .dropdown-menu .nav-img{
   width: 40px;
@@ -140,6 +149,7 @@ nav img {
   background-position: center;
 }
 
+.show {display: block;}
 
 
 /*  ---------------- Media Queries ----------------- */
@@ -194,11 +204,7 @@ nav img {
     padding: 10px;
     margin-top: 10px;
     max-height: 48vh;
-    min-width: 85vw;
-    position: absolute;
-    left: 0;
-    transform: translateX(-30vw);
-    
+    min-width: 50vw;
   }
   .dropdown-menu a {
     padding: 0;

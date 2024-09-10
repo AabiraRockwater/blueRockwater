@@ -143,7 +143,9 @@
 
 .card-5 {
   /* background: url(assets/picture-backgrounds/fish-meat.png); */
-  background: url(assets/picture-backgrounds/fish-plant.jpg);
+  /* background: url(assets/picture-backgrounds/fish-plant.jpg); */
+  background: url(assets/picture-backgrounds/nl-fish-plant.jpg);
+
   background-size: cover;
   background-position: center;
   order: 3;

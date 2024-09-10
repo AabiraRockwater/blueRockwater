@@ -23,17 +23,22 @@
     width: 100%;
     height: 50%;
     background-color: rgba(255, 255, 255, 0.001);
+    display: none;
 }
+
 
 .stacking-cards .left-div .bottom-div{
     width: 100%;
-    height: 50%;
+    height: 100%;
     color: rgb(153, 163, 255);
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
-    padding-left: 80px;
-
+    /* padding-left: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 70px;
     font-weight: 750;
     text-transform: uppercase;
@@ -158,13 +163,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     background: -webkit-linear-gradient(
         rgba(27, 9, 114, 0.85),
-        rgba(55, 152, 73, 0.7));
-    background: -webkit-linear-gradient(
-        rgba(27, 9, 114, 0.85),
         rgba(152, 55, 99, 0.7));
-    /* background: linear-gradient(30deg, #fb4795d3, #ff984fc9); */
-    /* background: linear-gradient(30deg, rgba(233, 29, 117, 0.85), rgba(194, 84, 5, 0.7)); */
-
 
     display: flex;
     flex-direction: column;
@@ -229,7 +228,7 @@
         margin: 0;
         display: flex;
         justify-content: center;
-        align-items:flex-start;
+        align-items:center;
     }
 
     .stacking-cards .left-div .bottom-div p {
@@ -312,14 +311,6 @@
 
 @media screen and (2200px < width) {
 
-    .stacking-cards .left-div .bottom-div {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items:flex-start;
-    }
-
     .stacking-cards .left-div .bottom-div p {
         font-size: 85px;
         min-width: 620px;
@@ -328,6 +319,34 @@
     .stacking-services .hover-reminder {
         max-width: 7vw;
         transform: translate(-7vw, 7vw);
+    }
+
+    .service-box{
+        min-width: 43vw;
+        max-width: 43vw;
+    }
+
+    .stacking-cards .right-div h1 {
+        font-size: 2vw;
+        margin: 40px;
+        margin-top: 5vw;
+    }
+     
+    .service-box .wrapper {
+        max-width: 22vw;
+    }
+    
+    .stacking-services img {
+        max-width: 22vw;
+    }
+    
+    .service-box .img-content {
+        width: 22vw;
+        max-width: 22vw;
+    }
+    
+    .service-box .img-content p {
+        font-size: 1.2vw;
     }
 }
 

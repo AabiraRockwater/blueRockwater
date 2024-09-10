@@ -1,0 +1,650 @@
+.transparent-layer {
+    min-height: 100vh;
+}
+
+
+.stacking-cards {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin: 0;
+}
+
+.stacking-cards .left-div, 
+.stacking-cards .right-div {
+    height: 100%;
+    width: 50%;
+    margin: 0;
+}
+
+/* ------------------ left ------------------- */
+.stacking-cards .left-div .top-div{
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.001);
+}
+
+.stacking-cards .left-div .bottom-div{
+    width: 100%;
+    height: 50%;
+    color: rgb(153, 163, 255);
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    padding-left: 80px;
+
+    font-size: 70px;
+    font-weight: 750;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+/* ------------------ left ------------------- */
+
+
+
+
+/* ------------------ RIGHT ------------------- */
+
+.stacking-cards .right-div {
+    background: url(assets/picture-backgrounds/group-portrait.png);
+    /* background: linear-gradient(30deg, rgba(23, 7, 79, 0.831), rgba(61, 52, 188, 0.233)),
+     url(assets/picture-backgrounds/rocks-background-1.jpg);
+      */
+    background-size: 50%;
+    background-attachment: fixed;
+    background-position:right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@supports (-webkit-touch-callout: none) {
+    /* For iOS devices so it changes to scroll on Iphone*/
+    .stacking-cards .right-div {
+      background-attachment: scroll;
+    }
+}
+
+.stacking-cards .right-div h1 {
+    min-height: 600px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.598);
+    text-transform: uppercase;
+    margin: 40px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+/* ------------------ right ------------------- */
+
+
+
+
+/* --------------------------------------------------- STACKING SERVICES -------------------------------------------------------- */
+.stacking-services {
+    min-height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    text-align: left;
+    color: white;
+    /* color: rgb(180, 187, 254); */
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
+}
+
+.stacking-services .service-img-container {
+    display: flex;
+} 
+
+.stacking-services .hover-reminder {
+    max-width: 150px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-170px, 170px);
+    box-shadow: none;
+}
+
+.service-content {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+}
+
+.service-box{
+    min-width: 550px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* margin-top: 40px; */
+    transform: translate(30px ,-30px);
+}
+
+.service-box .wrapper {
+    max-width: 280px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.stacking-services img {
+    max-width: 280px;
+    position: relative;
+    display: block;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
+}
+
+.service-box .img-content {
+    width: 280px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    background: -webkit-linear-gradient(
+        rgba(27, 9, 114, 0.85),
+        rgba(55, 152, 73, 0.7));
+    background: -webkit-linear-gradient(
+        rgba(27, 9, 114, 0.85),
+        rgba(152, 55, 99, 0.7));
+    /* background: linear-gradient(30deg, #fb4795d3, #ff984fc9); */
+    /* background: linear-gradient(30deg, rgba(233, 29, 117, 0.85), rgba(194, 84, 5, 0.7)); */
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+}
+.service-box .img-content:hover {
+    opacity: 1;
+} 
+
+.service-box .img-content p{
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 10px double rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.div-2 .wrapper {
+    transform: rotate(3deg) translateY(25px);
+}
+.div-3 .wrapper {
+    transform: rotate(-5deg) translateY(20px);
+}
+
+.stacking-services li {
+    margin: 10px;
+    margin-left: 60px;
+    margin-top: 0px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.stacking-services h1 {
+    font-weight: 900;
+}
+.stacking-services.div-1  li {
+    transform: translateY(0px);
+}
+.stacking-services.div-2  li {
+    transform: translateY(120px);
+}
+.stacking-services.div-3  li {
+    transform: translateY(240px);
+}
+
+
+
+/* ---------------------------- Media Queries ---------------------------- */
+
+@media screen and (1280px < width) {
+    .stacking-cards .left-div .bottom-div {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+    }
+
+    .stacking-cards .left-div .bottom-div p {
+        font-size: 73px;
+        min-width: 450px;
+    }
+}
+
+
+@media screen and (1400px < width) {
+    .stacking-services .hover-reminder {
+        max-width: 11.7vw;
+        transform: translate(-11.7vw, 11.7vw);
+    }
+
+    .service-box{
+        min-width: 43vw;
+        max-width: 43vw;
+    }
+
+    .stacking-cards .right-div h1 {
+        font-size: 2vw;
+        margin: 40px;
+        margin-top: 5vw;
+    }
+     
+    .service-box .wrapper {
+        max-width: 23.483vw;
+    }
+    
+    .stacking-services img {
+        max-width: 23.483vw;
+    }
+    
+    .service-box .img-content {
+        width: 23.483vw;
+    }
+    .service-box .img-content p {
+        font-size: 1.4vw;
+    }
+    .div-2 .wrapper {
+        transform: rotate(3deg) translateY(1.95vw);
+    }
+    .div-3 .wrapper {
+        transform: rotate(-5deg) translateY(1.563vw);
+    }
+    .stacking-services li {
+        margin-left: 4.688vw;
+        font-size: 0.9vw;
+    }
+
+    .stacking-services.div-1  li {
+        transform: translateY(0px);
+    }
+    .stacking-services.div-2  li {
+        transform: translateY(9.375vw);
+    }
+    .stacking-services.div-3  li {
+        transform: translateY(18.75vw);
+    }
+    
+}
+
+@media screen and (1600px < width) {
+    .stacking-services .hover-reminder {
+        max-width: 10vw;
+        transform: translate(-10vw, 10vw);
+    }
+}
+
+
+@media screen and (1800px < width) {
+
+    .stacking-services .hover-reminder {
+        max-width: 9vw;
+        transform: translate(-9vw, 9vw);
+    }
+}
+
+
+@media screen and (2200px < width) {
+
+    .stacking-cards .left-div .bottom-div {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+    }
+
+    .stacking-cards .left-div .bottom-div p {
+        font-size: 85px;
+        min-width: 620px;
+    }
+
+    .stacking-services .hover-reminder {
+        max-width: 7vw;
+        transform: translate(-7vw, 7vw);
+    }
+}
+
+
+/* ---------------------------- PHONE RESPONSIVNESS ---------------------------- */
+
+
+@media screen and (width < 1270px) {
+    
+
+    .stacking-cards .left-div .bottom-div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stacking-cards .left-div .bottom-div p {
+        font-size: 60px;
+        min-width: 400px;
+        margin-top: 0;
+    }
+
+    .stacking-services .hover-reminder {
+        max-width: 130px;
+        transform: translate(-130px, 130px);
+    }
+
+    .service-box{
+        min-width: auto;
+        max-width: auto;
+        width: 450px;
+        margin-top: 40px;
+        transform: none
+    }
+
+    .service-box .wrapper {
+        max-width: 250px;
+    }
+
+
+    .stacking-services img {
+        max-width: 250px;
+        position: relative;
+        display: block;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
+    }
+
+    .service-box .img-content {
+        width: 250px;
+    }
+
+    .service-box .img-content p{
+        font-size: 16px;
+    }
+
+    .stacking-services li {
+        margin-left: 50px;
+        font-size: 12px;
+    }
+    .stacking-services h1 {
+        font-weight: 890;
+    }
+    .stacking-services.div-1  li {
+        transform: translateY(0px);
+    }
+    .stacking-services.div-2  li {
+        transform: translateY(100px);
+    }
+    .stacking-services.div-3  li {
+        transform: translateY(200px);
+    }
+
+}
+
+
+@media screen and (width < 1100px) {
+    
+    .stacking-cards .left-div .bottom-div p {
+        font-size: 55px;
+        min-width: 380px;
+    }
+    
+    .stacking-services li {
+        margin-left: 40px;
+        font-size: 11px;
+    }
+
+}
+
+
+@media screen and (width < 1000px) {
+
+    .stacking-cards .left-div .bottom-div p {
+        font-size: 50px;
+        min-width: 350px;
+    }
+    
+    
+    .stacking-services .hover-reminder {
+        max-width: 120px;
+        transform: translate(-120px, 120px);
+    }
+
+    .service-box{
+        min-width: auto;
+        max-width: auto;
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    .service-box .wrapper {
+        max-width: 230px;
+    }
+
+    .stacking-services img {
+        max-width: 230px;
+    }
+
+    .service-box .img-content {
+        width: 230px;
+    }
+
+    .service-box .img-content p{
+        font-size: 14px;
+    }
+
+    .stacking-services li {
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    .stacking-services h1 {
+        font-weight: 870;
+    }
+
+}
+
+
+@media screen and (width < 900px) {
+
+
+    .stacking-cards {
+        flex-direction: column;
+    }
+    
+    .stacking-cards .left-div {
+        display: none;
+    }
+    
+    .stacking-cards .right-div {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        background-size: cover;
+
+    }
+    
+
+    .stacking-services {
+        justify-content: center;
+        transform: translateY(-40px);
+    }
+    
+    .stacking-services .hover-reminder {
+        display: none;
+    }
+    
+    .service-box{
+       width: 450px;
+       margin-top: 30px;
+    }
+    
+    .service-box .wrapper {
+        max-width: 300px;
+    }
+    
+    .stacking-services img {
+        max-width: 300px;
+    }
+    
+    .service-box .img-content {
+        width: 300px;
+    }
+    
+    .div-2 .wrapper {
+        transform: rotate(3deg) translateY(25px);
+    }
+    .div-3 .wrapper {
+        transform: rotate(-5deg) translateY(20px);
+    }
+    
+    .stacking-services li {
+        font-size: 14px;
+    }
+    .stacking-services h1 {
+        font-weight: 900;
+    }
+    .stacking-services.div-1  li {
+        transform: translateY(0px);
+    }
+    .stacking-services.div-2  li {
+        transform: translateY(120px);
+    }
+    .stacking-services.div-3  li {
+        transform: translateY(240px);
+    }
+
+}
+
+
+@media screen and (width < 700px) {
+    
+    .service-box .wrapper {
+        max-width: 280px;
+    }
+    
+    .stacking-services img {
+        max-width: 280px;
+    }
+    
+    .service-box .img-content {
+        width: 280px;
+    }
+    
+    .stacking-services li {
+        font-size: 12px;
+    }
+    
+}
+
+
+
+@media screen and (width < 600px) {
+    
+    .stacking-cards .right-div h1 {
+        font-size: 25px;
+    }
+
+    .service-box{
+       width: 400px;
+       margin: 0;
+       padding: 0;
+    }
+    
+    .service-box .wrapper {
+        max-width: 250px;
+    }
+    
+    .stacking-services img {
+        max-width: 250px;
+    }
+    
+    .service-box .img-content {
+        width: 250px;
+    }
+    
+    
+    .stacking-services li {
+        font-size: 10px;
+    }
+
+    .stacking-services.div-1  li {
+        transform: translateY(0px);
+    }
+    .stacking-services.div-2  li {
+        transform: translateY(100px);
+    }
+    .stacking-services.div-3  li {
+        transform: translateY(200px);
+    } 
+}
+
+
+
+@media screen and (width < 500px) {
+    .stacking-cards .right-div h1 {
+        font-size: 21px;
+    }
+
+    .service-box{
+       margin-top: 20px;
+       width: 350px;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+    }
+    
+    .stacking-services img {
+        max-width: 230px;
+    }
+    
+    .service-box .img-content {
+        width: 230px;
+    }
+    
+    
+    .stacking-services li {
+        font-size: 8px;
+        max-width: 230px;
+        list-style-type: none;
+
+    }
+    .div-1 .wrapper {
+       transform: rotate(1deg);
+    }
+
+    .stacking-services.div-1  li {
+        transform: translateY(50px);
+    }
+    .stacking-services.div-2  li {
+        transform: translateY(100px);
+    }
+    .stacking-services.div-3  li {
+        transform: translateY(140px);
+    } 
+}
+

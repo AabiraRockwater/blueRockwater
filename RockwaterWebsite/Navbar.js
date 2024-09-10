@@ -89,15 +89,15 @@ window.addEventListener("scroll", function () {
     ) {
       navbar.style.background = "white";
       leftNavLinks.forEach(function (link) {
-        link.style.color = "black";
+        link.style.color = "white";
       });
       rightNavLinks.forEach(function (link) {
         link.style.fontWeight = "400";
-        link.style.color = "black";
+        link.style.color = "white";
       });
       dropdownLinks.forEach(function (link) {
         link.style.fontWeight = "400";
-        link.style.color = "black"; // Maintain red color
+        link.style.color = "black";
       });
     }
   }
@@ -106,4 +106,8 @@ window.addEventListener("scroll", function () {
 function toggleMenu() {
   const nav = document.querySelector(".navbar-class");
   nav.classList.toggle("responsive");
+}
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }

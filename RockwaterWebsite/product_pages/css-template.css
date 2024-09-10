@@ -90,7 +90,7 @@ nav {
 
   .text-section {
     margin: 10px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .button-section {
@@ -147,4 +147,51 @@ nav {
 
   .hide-button {
     display: none;
+  }
+
+  @media screen and (width < 600px) {
+    main {
+      padding: 20px;
+    }
+    .product {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .text-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title-section { 
+      text-align: center;
+    }
+
+    .img-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-section button {
+      margin-inline: 5px;
+      width: 30px;
+      height: 30px;
+    }
+
   }

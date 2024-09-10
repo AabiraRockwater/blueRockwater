@@ -3,9 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!--  Social Media Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/rockwater-logo-nobackground.png"
+    />
+    
+    <link rel="stylesheet" href="../Everything.css" />
+    <link rel="stylesheet" href="../Navbar.css" />
+    <link rel="stylesheet" href="../Font-styling.css" />
+    <link rel="stylesheet" href="../s8-footer-styling.css" />
+    <link rel="stylesheet" href="css-template.css" />
+
+    <title>Food service</title>
+    <style>
+      .product-list h2 {
+        margin: 20px;
+        margin-bottom: 10px;
+      }
+      .product-list p {
+        margin: 5px;
+        margin-inline: 20px;
+      }
+    </style>
   </head>
-  <body>
+  <body class="raleway-font">
     <nav id="navbar" class="navbar-class">
       <div class="nav-container">
         <div class="left-nav raleway-font">
@@ -19,8 +48,10 @@
           <a class="raleway-font" href="../pages/about.html">About</a>
           <!-- <a class="raleway-font" href="#Divisions">Divisions</a> -->
           <div class="dropdown">
-            <a class="raleway-font dropdown-toggle" href="#">Divisions</a>
-            <div class="dropdown-menu">
+            <a class="raleway-font dropdown-toggle" onclick="myFunction()"
+              >Divisions</a
+            >
+            <div class="dropdown-menu" id="myDropdown">
               <a href="product_FoodNBeverage.html"
                 ><div
                   class="nav-img"
@@ -46,7 +77,7 @@
                     background-image: url(../assets/picture-backgrounds/Water-treatment.jpg);
                   "
                 ></div>
-                Water Treatment</a
+                Food service</a
               >
               <a href="JanIn.html"
                 ><div
@@ -84,5 +115,125 @@
         <div class="icon" onclick="toggleMenu()">&#9776;</div>
       </div>
     </nav>
+    <div class="title">
+      <h1>Food service</h1>
+      <p>Products for Food service coming soon!</p>
+      <br />
+    </div>
+    <main>
+      <div class="product-list">
+        <div class="message">
+          <h2>Food service Products Coming Soon!</h2>
+          <p>
+            We're currently updating our Food service product list for this
+            website.
+          </p>
+          <p>
+            To learn more about our Food service products or for immediate
+            assistance with Food service solutions, please reach out to us
+            using the contact information below or send us a message
+            <a href="../pages/contact.html">here.</a>
+            <br />
+          </p>
+          <p>Thank you for your patience!</p>
+        </div>
+      </div>
+    </main>
+
+    <!---------------------------- FOOTER SECTION ---------------------------->
+    <footer class="raleway-font" id="footer">
+      <div class="footer-background">
+        <div class="space"></div>
+        <div class="footer-1">
+          <div class="footer-content">
+            <div class="footer-contact">
+              <!-- <h1>Contact</h1> -->
+              <h1>Contact <i class="fa fa-phone" aria-hidden="true"></i></h1>
+              <br />
+              <p>
+                <b>Email:</b> &nbsp;<i
+                  class="fa fa-envelope"
+                  aria-hidden="true"
+                ></i>
+                admin@rockwater.net
+              </p>
+              <p>
+                <b>Phone:</b> &nbsp;<i
+                  class="fa fa-phone"
+                  aria-hidden="true"
+                ></i>
+                709-745-7625
+              </p>
+              <p>
+                <b>Socials:</b>&nbsp;
+                <a
+                  href="https://www.instagram.com/rockwater_professionalproducts/"
+                  class="insta"
+                  target="_blank"
+                >
+                  <i class="fa fa-instagram"></i> Instagram</a
+                >
+                &nbsp;|&nbsp;
+                <a
+                  href="https://www.facebook.com/ROCKWATERPP"
+                  class="facebook"
+                  target="_blank"
+                >
+                  <i class="fa fa-facebook"></i> Facebook</a
+                >
+              </p>
+            </div>
+
+            <div class="footer-address">
+              <h1>
+                Address <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </h1>
+              <br />
+              <p>5 Panther Place,</p>
+              <p>Mount Pearl, NL,</p>
+              <p>Canada</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-2">
+          <h1>Find Us!</h1>
+          <div class="iframe-container">
+            <!-- iframe height is set to 299 instead of 300 since to hide reviews  -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10776.469873332308!2d-52.828594999999986!3d47.52657599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0cbb5e15e29641%3A0x78565e1f88392aa3!2sROCKWATER%20Professional%20Products!5e0!3m2!1sen!2sus!4v1722348248208!5m2!1sen!2sus"
+              width="700"
+              height="299"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="copyright-attributions">
+            <a class="copyright" href="#"
+              >Copyright &copy; 2024 RockWater. All Rights Reserved.</a
+            >
+            <br />
+            <a href="#">Attributions:</a>
+            <a
+              href="https://www.flaticon.com/free-icons/leaf"
+              title="leaf icons"
+              >Leaf icons created by Pixel perfect - Flaticon</a
+            >
+            <a href="https://thenounproject.com/icon/chemical-1792984/">
+              Chemical Icon Created by Adrien Coquet from Noun Project</a
+            >
+            <a
+              href="https://pngtree.com/freepng/circle-phone-call-icon-in-black-color_8997757.html"
+              >png image from pngtree.com/</a
+            >
+          </div>
+        </div>
+        <div class="space"></div>
+      </div>
+    </footer>
+    <!---------------------------- FOOTER SECTION ---------------------------->
+
+    <script src="../Navbar.js"></script>
   </body>
 </html>
